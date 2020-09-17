@@ -12,7 +12,11 @@ layout: nav-foot
           </div>
           <div class="text-center mt-1 mb-0">{{page.author}}</div>
           <div class="text-center mt-0 mb-2">{{ page.date | date_to_string }}</div>
-          <div class="card-post-tags">put tags here</div>
+          <div class="card-post-tags text-center">
+            {% for tag in page.tags %}
+            <div class="chip bg-light" style="font-size: 0.95em">{{tag}}</div>
+            {% endfor %}
+          </div>
         </div>
         <hr />
         {{ content }}

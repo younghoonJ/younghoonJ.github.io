@@ -31,6 +31,7 @@ body {
   line-height: 1.5;
   color: #1f2935;
   text-align: left;
+  color: #212529;
   background-color: #fff;
 }
 
@@ -74,7 +75,12 @@ mark {
 }
 
 .bg-white {
+  color: #212529;
   background-color: #fff !important;
+}
+.bg-light{
+  color: #212529;
+  background-color: #f8f9fa !important;
 }
 
 .text-center {
@@ -476,7 +482,7 @@ input {
   white-space: nowrap;
   vertical-align: baseline;
   border-radius: 0.25rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;  
 }
 @media (prefers-reduced-motion: reduce) {
   .chip {
