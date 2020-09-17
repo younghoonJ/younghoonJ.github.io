@@ -563,3 +563,15 @@ a.chip:hover {
   background-color: rgba(0, 0, 0, 0.03);
   border-top: 1px solid rgba(0, 0, 0, 0.125);
 }
+
+.jumbotron {
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-color: #e9ecef;
+  border-radius: 0.3rem;
+}
+@media (min-width: 576px) {
+  .jumbotron {
+    padding: 4rem 2rem;
+  }
+}
