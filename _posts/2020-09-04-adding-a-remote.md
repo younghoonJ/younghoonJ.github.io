@@ -19,7 +19,8 @@ origin https://github.com/younghoonJ/Liquid.git (push)
 만약 remote name이 이미 존재한다면
 
 ```powershell
-PS D:\Liquid\Liquid> git remote add origin https://github.com/younghoonJ/Liquid.git fatal: remote origin already exists
+PS D:\Liquid\Liquid> git remote add origin https://github.com/younghoonJ/Liquid.git
+fatal: remote origin already exists
 ```
 
 - 새로운 이름을 사용하거나
