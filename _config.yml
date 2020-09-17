@@ -1,1 +1,28 @@
-theme: jekyll-theme-cayman
+highlighter: none
+markdown: kramdown
+kramdown:
+  syntax_highlighter_opts:
+    disable: true
+
+collections:
+  authors:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+      blogtitle: "Byways"
+      author: "Younghoon Jung"
+      brand: "Byways"
