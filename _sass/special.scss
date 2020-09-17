@@ -2,10 +2,7 @@
 
 html {
   font-family: "Noto Sans KR";
-}
-
-body {
-  background-color: #fafafa;
+  min-height: 100vh;
 }
 
 a {
@@ -13,9 +10,21 @@ a {
   color: inherit;
 }
 
+code {
+  background-color: #f9f2f4;
+  color: #c7254e;
+  padding: 0.2em;
+}
+
 .shadow-b {
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
+
+.page-container{
+  position: relative;
+  min-height: 100%;
+}
+
 .footer-wrapper {
   padding: 2.5rem 0;
   width: 100vw !important;
@@ -31,8 +40,13 @@ a {
 }
 
 .navbar-custom{
-  padding: 5px 10px;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 3px;
+  padding-left: 10px;
+  height: 60px;
 }
+
 
 @media screen and (max-width: 600px) {
   .post-body iframe {
