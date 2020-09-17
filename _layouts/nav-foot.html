@@ -2,9 +2,6 @@
 layout: default
 ---
 
-<div class="body-wrapper">
-  {% include navbar.html %}
-  {{content}}
-  </div>
-  {% include footer.html %}
+<div class="page-container">
+  <div class="page-wrapper">{% include navbar.html %} {{content}} {% include footer.html %}</div>
 </div>
