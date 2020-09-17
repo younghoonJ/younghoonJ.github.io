@@ -1,7 +1,8 @@
 ---
 layout: post
 author: Younghoon, Jung
-post-title: Delegation pattern
+title: Delegation pattern
+tags: [Delegation pattern, Design pattern, Reusability pattern, julia]
 ---
 
 공부와 같은 특별한 목적이 아니라면, 그리고 라이선스 문제가 없다면 코드를 재사용하는 편이 좋다. 그렇다면 어떻게 코드를 재사용하면 좋을까? 그냥 코드를 복사해 붙일까?

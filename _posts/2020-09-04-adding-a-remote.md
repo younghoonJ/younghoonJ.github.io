@@ -1,7 +1,8 @@
 ---
 layout: post
 author: Younghoon, Jung
-post-title: Adding a remote
+title: Adding a remote
+[Delegation pattern, Design pattern, Reusability pattern julia]
 ---
 
 git에 github 같은 원격 저장소를 추가하려면 `git remote` 명령어를 사용하면 된다. `git remote add` 옵션 이용해 새로운 remote를 추가할 수 있고 add 명령은 Remote name과 Remote URL이라는 두 인자를 가진다.
@@ -17,12 +18,13 @@ origin https://github.com/younghoonJ/Liquid.git(fetch)
 origin https://github.com/younghoonJ/Liquid.git (push)
 ```
 
-만약 remote name이 이미 존재한다면
+만약 remote name이 이미 존재한다면 다음과 같은 에러가 발생하고
 
 ```powershell
 PS D:\Liquid\Liquid> git remote add origin https://github.com/younghoonJ/Liquid.git
 fatal: remote origin already exists
 ```
+이런 경우
 
 - 새로운 이름을 사용하거나
 - 존재하는 remote의 이름을 변경하거나
