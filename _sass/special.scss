@@ -17,6 +17,11 @@ p code {
 }
 
 
+.place-holder{
+  background-color: transparent;
+  border: none;
+}
+
 .shadow-b {
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
@@ -46,6 +51,31 @@ p code {
   padding-bottom: 3px;
   padding-left: 10px;
   height: 60px;
+}
+
+
+.tagcloud {
+  .tagcloud-tag {
+    display: inline;
+    white-space: nowrap;
+    padding: 0.6em;
+  }
+  .tagcloud-tag-s a {
+    // default font size
+    color: cyan;
+  }
+  .tagcloud-tag-m a {
+    font-size: 1.1em;
+    color: blue;
+  }
+  .tagcloud-tag-l a {
+    font-size: 1.3em;
+    color: indigo;
+  }
+  .tagcloud-tag-xl a {
+    font-size: 1.6em;
+    color: red;
+  }
 }
 
 @media screen and (max-width: 600px) {
