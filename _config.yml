@@ -23,7 +23,18 @@ defaults:
       author: "Younghoon Jung"
 
 
-collections:
-  archives:
-    output: true
-    permalink: /archives/:path/
+
+jekyll-archives:
+  enabled: [tags]
+  layouts:
+    year: year-archive
+    month: month-archive
+    day: day-archive
+    category: category-archive
+    tag: tag-archive
+  permalinks:
+    year: '/assets/:year/'
+    month: '/assets/:year/:month/'
+    day: '/assets/:year/:month/:day/'
+    tag: '/assets/tag/:name/'
+    category: '/assets/category/:name/'

@@ -2,21 +2,21 @@
 {% assign maybeMaxCount = 10000 %}
 
 {% capture tags %}
-  {% for tag in site.tags %}
-  {{ tag[1].size | plus: maybeMaxCount }}#{{ tag[0] | slugize }}#{{ tag[1].size }}#{{sep}}
-  {% endfor %}
+{% for tag in site.tags %}
+{{ tag[1].size | plus: maybeMaxCount }}#{{ tag[0] | slugize }}#{{ tag[1].size }}#{{sep}}
+{% endfor %}
 {% endcapture %}
 
 {% assign sorted = tags | split: sep | sort | reverse %}
 
 <div class="cloud">
   {% for tag in sorted %}
-    {% assign stripped = tag | strip %}
-    {% if stripped.size > 0 %}
-      {% assign item = stripped | split: '#' [1]%}
-        <div class="btn bg-white cloud-drop my-2 mx-1">
-          <a href="/tag/{{ item[1] | slugify }}">{{ item[1] }} ({{ item[2] }})</a>
-        </div>
-    {% endif %}
+  {% assign stripped = tag | strip %}
+  {% if stripped.size > 0 %}
+  {% assign item = stripped | split: '#' [1]%}
+  <div class="btn bg-white cloud-drop my-2 mx-1">
+    <a href="assets/tag/{{ item[1] | slugify }}">{{ item[1] }} ({{ item[2] }})</a>
+  </div>
+  {% endif %}
   {% endfor %}
 </div>
