@@ -7,24 +7,29 @@ on:
 
 jobs:
   build-deploy-gh-pages:
-    runs-on: ubuntu-16.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
 
-      - uses: helaili/jekyll-action@2.0.4
-        env:
-          JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
-
-      # Specify the Jekyll source location as a parameter
-      - uses: helaili/jekyll-action@2.0.4
-        env:
-          JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
+      - name: Cache gems
+        uses: actions/cache@v1
         with:
-          jekyll_src: "sample_site"
+          path: vendor/gems
+          key: ${{ runner.os }}-build-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
 
-      # Specify the target branch (optional)
-      - uses: helaili/jekyll-action@2.0.4
+      - name: Build & Deploy to GitHub Pages
+        uses: DavidS/jekyll-deploy@main
         env:
-          JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
+          JEKYLL_ENV: production
+          GH_PAGES_TOKEN: ${{ secrets.JEKYLL_PAT }}
+
+      - name: Build & Deploy to custom branch
+        uses: DavidS/jekyll-deploy@main
         with:
-          target_branch: "gh-pages"
+          target-branch: gh-pages
+        env:
+          JEKYLL_ENV: production
+          GH_PAGES_TOKEN: ${{ secrets.JEKYLL_PAT }}
