@@ -15,7 +15,7 @@
   {% if stripped.size > 0 %}
   {% assign item = stripped | split: '#' [1]%}
   <div class="btn bg-white cloud-drop my-2 mx-1">
-    <a href="assets/tag/{{ item[1] | slugify }}">{{ item[1] }} ({{ item[2] }})</a>
+    <a href="archives/tag/{{ item[1] | slugify }}">{{ item[1] }} ({{ item[2] }})</a>
   </div>
   {% endif %}
   {% endfor %}

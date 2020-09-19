@@ -33,8 +33,8 @@ jekyll-archives:
     category: category-archive
     tag: tag-archive
   permalinks:
-    year: '/assets/:year/'
-    month: '/assets/:year/:month/'
-    day: '/assets/:year/:month/:day/'
-    tag: '/assets/tag/:name/'
-    category: '/assets/category/:name/'
+    year: '/archives/:year/'
+    month: '/archives/:year/:month/'
+    day: '/archives/:year/:month/:day/'
+    tag: '/archives/tag/:name/'
+    category: '/archives/category/:name/'
