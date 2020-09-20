@@ -2,10 +2,11 @@
 layout: default
 ---
 
+{% include navbar.html %}
 <div class="page-container">
   <div class="page-wrapper">
-    {% include navbar.html %}
     <div class="place-holder navbar-custom"></div>
+    {% include cloudmodal.html %}
     {{content}}
     <div class="place-holder py-2"></div>
     {% include footer.html %}
