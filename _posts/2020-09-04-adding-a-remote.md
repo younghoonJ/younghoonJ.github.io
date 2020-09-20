@@ -4,6 +4,7 @@ author: Younghoon, Jung
 title: Adding a remote
 tags: [git, github, remote]
 description: Explains git remote command.
+hascode: true
 ---
 
 git에 github 같은 원격 저장소를 추가하려면 `git remote` 명령어를 사용하면 된다. `git remote add` 옵션 이용해 새로운 remote를 추가할 수 있고 add 명령은 Remote name과 Remote URL이라는 두 인자를 가진다.

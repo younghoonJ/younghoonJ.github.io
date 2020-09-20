@@ -7,6 +7,26 @@
     <a href="/" rel="copyright"> {{page.blogtitle}} </a>
     All Rights Reserved | Template by Younghoon Jung
   </p>
-  <script src="{{ "/assets/js/prism.js" | prepend: site.baseurl }}"></script>
   <script src="{{ "/assets/js/modalcloud.js" | prepend: site.baseurl }}"></script>
+  {% if page.hascode %}
+  <script src="{{ "/assets/js/prism.js" | prepend: site.baseurl }}"></script>
+  {% endif %}
+
+  {% if page.hasmath %}
+  <!-- Parse the Latex divs with Katex-->
+<script type="text/javascript">
+  $("script[type='math/tex']").replaceWith(
+    function(){
+      var tex = $(this).text();
+      return katex.renderToString(tex, {displayMode: false});
+  });
+  
+  $("script[type='math/tex; mode=display']").replaceWith(
+    function(){
+      var tex = $(this).text();
+      return katex.renderToString(tex.replace(/%.*/g, ''), {displayMode: true});
+  });
+</script>
+  {% endif %}
+
 </footer>
