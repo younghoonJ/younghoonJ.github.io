@@ -16,8 +16,7 @@ p code {
   padding: 0.2em;
 }
 
-
-.place-holder{
+.place-holder {
   background-color: transparent;
   border: none;
 }
@@ -26,7 +25,13 @@ p code {
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
+.card-shadow{
+  box-shadow: 0 2px 4px 0 rgba(186,186,186,0.5);
+}
+
+
 .page-container {
+  // background-color: #f4f4f4;
   position: relative;
   min-height: 100%;
 }
@@ -47,40 +52,24 @@ p code {
 
 .navbar-custom {
   padding-top: 5px;
-  padding-right: 10px;
-  padding-bottom: 3px;
-  padding-left: 10px;
+  padding-right: 40px;
+  padding-bottom: 5px;
+  padding-left: 40px;
   height: 60px;
 }
 
 
-.tagcloud {
-  .tagcloud-tag {
-    display: inline;
-    white-space: nowrap;
-    padding: 0.6em;
-  }
-  .tagcloud-tag-s a {
-    // default font size
-    color: cyan;
-  }
-  .tagcloud-tag-m a {
-    font-size: 1.1em;
-    color: blue;
-  }
-  .tagcloud-tag-l a {
-    font-size: 1.3em;
-    color: indigo;
-  }
-  .tagcloud-tag-xl a {
-    font-size: 1.6em;
-    color: red;
-  }
-}
-
-
 #cloudmodal{
+  padding-top: 4rem;
+}
+#cloudmodal .modal-content {
   max-width: 600px;
+}
+#closecloud{
+  justify-content: center;
+}
+#closecloud span{
+  align-items: center;
 }
 
 

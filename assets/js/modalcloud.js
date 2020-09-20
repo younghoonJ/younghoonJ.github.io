@@ -1,6 +1,6 @@
 var cloudmodal = document.getElementById("cloudmodal");
     var opencloud = document.getElementById("opencloud");
-    var closecloud = document.getElementsByClassName("closecloud")[0];
+    var closecloud = document.getElementById("closecloud");
     opencloud.onclick = function () {
       cloudmodal.style.display = "block";
     }
