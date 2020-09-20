@@ -1,9 +1,9 @@
 highlighter: none
 markdown: kramdown
 kramdown:
+  math_engine: katex
   syntax_highlighter_opts:
     disable: true
-  math_engine: mathjax
 
 defaults:
   - scope:
@@ -23,8 +23,6 @@ defaults:
       blogtitle: "Byways"
       author: "Younghoon Jung"
 
-plugins:
-  - jekyll-archives
 
 jekyll-archives:
   enabled: [tags]
