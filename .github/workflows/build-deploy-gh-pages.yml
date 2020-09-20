@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-deploy-gh-pages:
-    runs-on: windows
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v2
 
