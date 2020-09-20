@@ -22,9 +22,9 @@ jobs:
             ${{ runner.os }}-
 
       - name: Build & Deploy to custom branch
-        uses: younghoonJ/jekyll-deploy@main
-        with:
-          target-branch: gh-pages
+        uses: younghoonJ/jekyll-build-deploy@master
         env:
           JEKYLL_ENV: production
           GH_PAGES_TOKEN: ${{ secrets.JEKYLL_PAT }}
+        with:
+          target-branch: gh-pages
