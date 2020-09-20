@@ -1,0 +1,30 @@
+  
+name: Build and deploy Jekyll site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-deploy-gh-pages:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Cache gems
+        uses: actions/cache@v1
+        with:
+          path: vendor/gems
+          key: ${{ runner.os }}-build-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+
+      - name: Build & Deploy to custom branch
+        uses: younghoonJ/jekyll-deploy@main
+        with:
+          target-branch: gh-pages
+        env:
+          JEKYLL_ENV: production
+          GH_PAGES_TOKEN: ${{ secrets.JEKYLL_PAT }}
