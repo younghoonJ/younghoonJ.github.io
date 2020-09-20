@@ -22,7 +22,8 @@ defaults:
       blogtitle: "Byways"
       author: "Younghoon Jung"
 
-
+plugins:
+  - jekyll-archives
 
 jekyll-archives:
   enabled: [tags]
