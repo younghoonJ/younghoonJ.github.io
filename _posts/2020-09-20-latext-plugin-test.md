@@ -52,7 +52,7 @@ kramdown:
   math_engine: katex
 ```
 
-이제 css와 font를 가지고 와야 하는데 [링크](https://katex.org/docs/autorender.html)에 있는 CDN을 사용하거나 [링크](https://github.com/KaTeX/KaTeX/releases)에서 다운받아 직접 프로젝트에 포함하면 된다. 나는 `/assets/katex` 라는 디렉터리를 만들고 그곳에 `/fonts`와 katex.min.css를 복사해서 프로젝트에 필요한 직접 파일을 포함했다.
+이제 css와 font를 가지고 와야 하는데 [링크](https://katex.org/docs/autorender.html)에 있는 CDN을 사용하거나 [링크](https://github.com/KaTeX/KaTeX/releases)에서 다운받아 직접 프로젝트에 포함하면 된다. 나는 `/assets/katex` 라는 디렉터리를 만들고 그곳에 `/fonts`와 katex.min.css를 복사했다.
 
 그리고 Latex 렌더렝이 필요한 페이지의 `<head>`부분에 css를 추가하면 된다.
 ```html
@@ -67,7 +67,7 @@ kramdown:
 ```latex
 $$e^{i\theta} = \cos{\theta} + i\sin{\theta}$$
 ```
-제대로 나온다.
+제대로 표현된다.
 
 
 $$e^{i\theta} = \cos{\theta} + i\sin{\theta}$$
