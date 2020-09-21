@@ -12,7 +12,7 @@ a {
 
 p code {
   background-color: #f9f2f4;
-  color: #c7254e;
+  color: #c7254e; 
   padding: 0.2em;
 }
 
@@ -58,18 +58,28 @@ p code {
   height: 60px;
 }
 
-
+#searchmodal,
 #cloudmodal{
   padding-top: 4rem;
 }
+
+#searchmodal .modal-content,
 #cloudmodal .modal-content {
   max-width: 600px;
 }
+
 #closecloud{
   justify-content: center;
 }
+
+#searchmodal span,
 #closecloud span{
   align-items: center;
+}
+
+.card-custom{
+  border: none;
+  border-radius: 0;
 }
 
 

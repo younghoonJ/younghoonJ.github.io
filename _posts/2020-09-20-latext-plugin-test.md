@@ -2,7 +2,7 @@
 layout: post
 author: Younghoon, Jung
 title: Latex plugin test
-tags: [latex, katex, math-expr, science, tag1, tag2, tag3]
+tags: [latex, katex, math-expr, science, tag1, tag2, tag3, remote, pattern]
 description: Latex plugin test
 hasmath: true
 ---

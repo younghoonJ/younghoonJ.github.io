@@ -1,8 +1,3 @@
-/*!
- * Simple-Jekyll-Search
- * Copyright 2015-2020, Christian Fei
- * Licensed under the MIT License.
- */
 !(function () {
   "use strict";
   var i = {
@@ -171,7 +166,12 @@
       resultsContainer: null,
       json: [],
       success: Function.prototype,
-      searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+      searchResultTemplate:  `<a href="{url}" title="{desc}">
+                                <div class="card-body px-3 py-2">
+                                  <div><h5 class="card-title text-left mt-2">{title}</h5></div>
+                                  <div class="card-post-tags text-left">- {tags}</div>
+                                </div>
+                              </a>`,
       templateMiddleware: Function.prototype,
       sortMiddleware: function () {
         return 0;
