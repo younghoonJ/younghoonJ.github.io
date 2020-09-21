@@ -23,7 +23,6 @@ defaults:
       blogtitle: "Byways"
       author: "Younghoon Jung"
 
-
 jekyll-archives:
   enabled: [tags]
   layouts:
@@ -33,8 +32,8 @@ jekyll-archives:
     category: category-archive
     tag: tag-archive
   permalinks:
-    year: '/archives/:year/'
-    month: '/archives/:year/:month/'
-    day: '/archives/:year/:month/:day/'
-    tag: '/archives/tag/:name/'
-    category: '/archives/category/:name/'
+    year: "/archives/:year/"
+    month: "/archives/:year/:month/"
+    day: "/archives/:year/:month/:day/"
+    tag: "/archives/tag/:name/"
+    category: "/archives/category/:name/"
