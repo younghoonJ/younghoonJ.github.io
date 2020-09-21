@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&display=swap");
 
 html {
   font-family: "Noto Sans KR";
@@ -98,6 +98,18 @@ p code {
 
 .fw-300{
   font-weight: 300;
+}
+
+.cloud-drop {
+  border-radius: 0.55rem;
+  display: inline-block;
+  padding: 0.24rem;
+}
+.drop{
+    font-weight: 300;
+    background-color: #fafafa;
+    color: #000000;
+    vertical-align: middle ;
 }
 
 @media screen and (max-width: 600px) {
