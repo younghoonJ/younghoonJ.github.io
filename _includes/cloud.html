@@ -14,7 +14,7 @@
   {% assign stripped = tag | strip %}
   {% if stripped.size > 0 %}
   {% assign item = stripped | split: '#' [1]%}
-  <div class="cloud-drop my-1 mx-1">
+  <div class="cloud-drop mb-1 ml-1">
     <div class="btn drop container px-3 py-1">
       {% assign filepath = "archives/tag/" | absolute_url %}
       {% assign itemname = item[1] | slugify %}
