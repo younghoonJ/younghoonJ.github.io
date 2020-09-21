@@ -9,7 +9,7 @@
   {% if page.hascode %}
   <link rel="stylesheet" href="{{ "/assets/css/prism.css" | prepend: site.baseurl }}">
   {% endif %}
-  {% if page.hasmath %}
+  {% if page.hasmath or page.entrypoint %}
   <link rel="stylesheet" href="/assets/katex/katex.min.css">
   {% endif %}
 
