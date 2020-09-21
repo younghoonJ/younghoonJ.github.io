@@ -14,9 +14,14 @@
   {% assign stripped = tag | strip %}
   {% if stripped.size > 0 %}
   {% assign item = stripped | split: '#' [1]%}
-  <div class="btn bg-white cloud-drop my-2 mx-1">
-    <a href="archives/tag/{{ item[1] | slugify }}">{{ item[1] }} ({{ item[2] }})</a>
+  <div class="cloud-drop my-1 mx-1">
+    <div class="btn drop container px-4 py-2">
+      <a href="archives/tag/{{ item[1] | slugify }}">
+        <span>{{ item[1] }} ({{ item[2] }})</span>
+      </a>
+    </div>
   </div>
+
   {% endif %}
   {% endfor %}
 </div>
