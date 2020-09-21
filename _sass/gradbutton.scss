@@ -1,11 +1,3 @@
-// .cloud-drop {
-//   border-radius: 0.2rem;
-//   border: none;
-//   color: #fff;
-//   font-size: 1.2rem;
-// }
-
-
 .cloud-drop {
   border-radius: 0.55rem;
   display: inline-block;
@@ -13,61 +5,61 @@
 }
 .drop{
     font-weight: 300;
-    // background-color: white;
-    // color: #000000;
-    color: white;
+    background-color: #fafafa;
+    color: #000000;
+    // color: white;
     vertical-align: middle ;
 }
 
-.cloud-drop:nth-child(13n + 1) {
-  background-image: linear-gradient(to top, #d83f91, #d0409b, #c743a5, #bb47af, #ae4bb8);
-}
+// .cloud-drop:nth-child(13n + 1) {
+//   background-image: linear-gradient(to top, #d83f91, #d0409b, #c743a5, #bb47af, #ae4bb8);
+// }
 
-.cloud-drop:nth-child(13n + 2) {
-  background-image: linear-gradient(to right top, #fdbe25, #fec928, #ffd42b, #ffdf31, #ffea37);
-}
+// .cloud-drop:nth-child(13n + 2) {
+//   background-image: linear-gradient(to right top, #fdbe25, #fec928, #ffd42b, #ffdf31, #ffea37);
+// }
 
-.cloud-drop:nth-child(13n + 3) {
-  background-image: linear-gradient(to right top, #fab823, #f9a315, #f68d0c, #f3770d, #ee5f13);
-}
+// .cloud-drop:nth-child(13n + 3) {
+//   background-image: linear-gradient(to right top, #fab823, #f9a315, #f68d0c, #f3770d, #ee5f13);
+// }
 
-.cloud-drop:nth-child(13n + 4) {
-  background-image: linear-gradient(to right top, #ed433f, #df3a37, #d2302f, #c42627, #b71b1f);
-}
+// .cloud-drop:nth-child(13n + 4) {
+//   background-image: linear-gradient(to right top, #ed433f, #df3a37, #d2302f, #c42627, #b71b1f);
+// }
 
-.cloud-drop:nth-child(13n + 5) {
-  background: linear-gradient(to right, #11998e, #38ef7d);
-}
+// .cloud-drop:nth-child(13n + 5) {
+//   background: linear-gradient(to right, #11998e, #38ef7d);
+// }
 
-.cloud-drop:nth-child(13n + 6) {
-  background-image: linear-gradient(to top, #a94bb9, #9b46b7, #8d42b5, #7d3eb2, #6d3ab0);
-}
+// .cloud-drop:nth-child(13n + 6) {
+//   background-image: linear-gradient(to top, #a94bb9, #9b46b7, #8d42b5, #7d3eb2, #6d3ab0);
+// }
 
-.cloud-drop:nth-child(13n + 7) {
-  background-image: linear-gradient(to top, #5540cd, #493fc7, #3c3ec0, #2e3dba, #1e3bb3);
-}
+// .cloud-drop:nth-child(13n + 7) {
+//   background-image: linear-gradient(to top, #5540cd, #493fc7, #3c3ec0, #2e3dba, #1e3bb3);
+// }
 
-.cloud-drop:nth-child(13n + 8) {
-  background-image: linear-gradient(to right top, #eb4f12, #e74717, #e23f1b, #de361e, #d92d21);
-}
+// .cloud-drop:nth-child(13n + 8) {
+//   background-image: linear-gradient(to right top, #eb4f12, #e74717, #e23f1b, #de361e, #d92d21);
+// }
 
-.cloud-drop:nth-child(13n + 9) {
-  background-image: linear-gradient(to top, #1c3eb4, #154cbd, #1059c6, #1266ce, #1b73d5);
-}
+// .cloud-drop:nth-child(13n + 9) {
+//   background-image: linear-gradient(to top, #1c3eb4, #154cbd, #1059c6, #1266ce, #1b73d5);
+// }
 
-.cloud-drop:nth-child(13n + 10) {
-    background-image: linear-gradient(to right top, #b71c24, #c41c3c, #cf2154, #d72c6d, #db3a86);
-}
+// .cloud-drop:nth-child(13n + 10) {
+//     background-image: linear-gradient(to right top, #b71c24, #c41c3c, #cf2154, #d72c6d, #db3a86);
+// }
 
-.cloud-drop:nth-child(13n + 11) {
-  background: linear-gradient(to right, #aaffa9, #11ffbd);
-}
+// .cloud-drop:nth-child(13n + 11) {
+//   background: linear-gradient(to right, #aaffa9, #11ffbd);
+// }
 
-.cloud-drop:nth-child(13n + 12) {
-  background: linear-gradient(to right, #403b4a, #bbbbb4);
-}
+// .cloud-drop:nth-child(13n + 12) {
+//   background: linear-gradient(to right, #403b4a, #bbbbb4);
+// }
 
-.cloud-drop:nth-child(13n + 13) {
-  background-image: linear-gradient(to top, #4292ff, #388cff, #2e86ff, #2380ff, #177aff);
-}
+// .cloud-drop:nth-child(13n + 13) {
+//   background-image: linear-gradient(to top, #4292ff, #388cff, #2e86ff, #2380ff, #177aff);
+// }
 
