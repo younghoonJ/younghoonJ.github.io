@@ -83,13 +83,21 @@ p code {
 }
 
 .tag-archive-browsingtags{
-  margin-top: 1.5rem !important;
+  margin-top: 2rem !important;
   margin-bottom: 0 !important;
   font-weight: 300;
   font-size: 0.8rem;
   letter-spacing: 0.5rem;
 }
 
+.tag-archive-title{
+  text-align: left !important;
+  text-transform: capitalize;
+}
+
+.fw-300{
+  font-weight: 300;
+}
 
 @media screen and (max-width: 600px) {
   .post-body iframe {

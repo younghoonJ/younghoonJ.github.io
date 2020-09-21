@@ -16,8 +16,10 @@
   {% assign item = stripped | split: '#' [1]%}
   <div class="cloud-drop my-1 mx-1">
     <div class="btn drop container px-3 py-1">
-      <a href="archives/tag/{{ item[1] | slugify }}">
-        <span>{{ item[1] }} ({{ item[2] }})</span>
+      {% assign filepath = "archives/tag/" | absolute_url %}
+      {% assign itemname = item[1] | slugify %}
+      <a href={{filepath | append: itemname }}>
+        <span>{{ item[1] }} ({{ item[2] }})</simport pan>
       </a>
     </div>
   </div>
