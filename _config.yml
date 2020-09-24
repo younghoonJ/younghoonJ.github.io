@@ -20,7 +20,7 @@ defaults:
       path: ""
     values:
       layout: "default"
-      blogtitle: "Byways"
+      blogtitle: "DOCs"
       author: "Younghoon Jung"
 
 jekyll-archives:
