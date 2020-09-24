@@ -4,6 +4,10 @@ html {
   font-family: "Noto Sans KR";
   min-height: 100vh;
 }
+body{
+  background-color: #fff;
+  // background-color: #494537;
+}
 
 
 a {
@@ -41,8 +45,9 @@ p code {
 .footer-wrapper {
   padding: 2.5rem 0;
   width: 100vw !important;
-  background-color: #000000;
-  color: #999;
+  background-color: #211c19;
+  // color: #999;
+  color:#d6b377;
   text-align: center;
   border-top: 0.05rem solid #e5e5e5;
 }
@@ -58,6 +63,14 @@ p code {
   padding-bottom: 5px;
   padding-left: 10px;
   height: 60px;
+}
+
+#profilelink,
+#opensearch,
+#opencloud{
+  // color: #f9f2f4;
+  // color: #CCB285;
+  color: #d6b377;
 }
 
 #searchmodal,
@@ -78,6 +91,10 @@ p code {
 #searchmodal span,
 #closecloud span{
   align-items: center;
+}
+
+.card-body{
+  background-color: #f9f7ed;
 }
 
 .card-custom{
