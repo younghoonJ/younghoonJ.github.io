@@ -3,7 +3,7 @@ layout: post
 author: Younghoon, Jung
 title: One-way ANOVA
 tags: [ANOVA, one-way ANOVA, hypothesis testing, statistics]
-description: Integrating KaTex with Jekyll blog.
+description: Explains one-way ANOVA.
 hasmath: true
 ---
 
