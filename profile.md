@@ -3,6 +3,8 @@ layout: profile
 hasmath: true
 ---
 
+-- fixme -- : width for mobile view
+
 ### Younghoon Jung (정영훈)
 - Senior Engineer at Samsung SDS 
 - Ph. D in Mathematics
