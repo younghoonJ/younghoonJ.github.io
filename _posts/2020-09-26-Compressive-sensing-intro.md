@@ -53,7 +53,7 @@ $$ min \| x \|_0~~\textrm{subject to}~~Ax=y$$
 안타깝게도 위 문제는 일반적으로 `NP-hard` 라서 이런걸 풀려고 시도하면 은퇴할 때까지도 컴퓨터가 결과를 리턴하지 않을 수 있습니다. 그래서 convex-relaxation, greedy-type method를, threshoding method등 다른 방법을 이용해야 합니다. 어떤 알고리듬을 선택하더라도 사용하는 인간이 열심히 하면 잘 풀릴 거에요 아마.
 
 
-# Sparse Approximation
+## Sparse Approximation
 
 Compressive sensing은 많은 signal이 sparse 하게 근사할 수 있다는 관찰로부터 시작되었다고 할 수 있습니다. 이런 관점에서 Compressive sensing은 `Sparse Approximation`의 하위 주제라고 생각할 수 있습니다. 하지만 Compressive sensing이 완전히 Sparse Approximation인 것은 아니며 이 둘은 보는 관점에는 차이가 있습니다.
 
@@ -68,7 +68,7 @@ $$\min\| x \|_0~~\textrm{subject to}~~Ax = y.$$
 또 다른 차이는 어떤 오차에 관심이 있는가입니다. $$x^{sp}$$가 $$x$$의 sparse recovery일 때, Compressive sensing에서는 $$\|x - x^{sp}\|$$라는 signal의 오차 자체에 관심을 두는 반면 sparse approximation에서는 $$\|y - \sum x_j^{sp}a_j\|$$라는 representation error에 관심이 있습니다.
 
 
-# Machine Learning
+## Machine Learning
 
 기계학습은 input data로부터 outcome을 예측하는 것이 목표입니다. 예를들어 다음의 모델이 있습니다.
 
@@ -92,7 +92,7 @@ $$y = Ax +e$$
 $$min \| Ax-y \|_2^2~~\textrm{subject to}~~\| x \|_1\leq t$$
 
 
-# Low-Rank Matrix Recovery and Matrix Completion
+## Low-Rank Matrix Recovery and Matrix Completion
 
 우리가 Signal에 대한 sparsity 가정을 Matrix의 low rank 가정으로 바꾸면 불완전한 정보로부터 $$X\in\mathbb{C}^{n_1\times n_2}$$를 복원하는 Low rank matrix recovery problem을 생각할 수 있습니다. 이 문제는 matrix completion problem에서 많이 이용되고 micro targeting이나 recommender system에서 많이 사용됩니다. 
 
