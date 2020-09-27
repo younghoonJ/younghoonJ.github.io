@@ -92,3 +92,28 @@ $$y = Ax +e$$
 $$min \| Ax-y \|_2^2~~\textrm{subject to}~~\| x \|_1\leq t$$
 
 
+# Low-Rank Matrix Recovery and Matrix Completion
+
+우리가 Signal에 대한 sparsity 가정을 Matrix의 low rank 가정으로 바꾸면 불완전한 정보로부터 $$X\in\mathbb{C}^{n_1\times n_2}$$를 복원하는 Low rank matrix recovery problem을 생각할 수 있습니다. 이 문제는 matrix completion problem에서 많이 이용되고 micro targeting이나 recommender system에서 많이 사용됩니다. 
+
+이제 Linear map $$\mathcal{A}: \mathbb{C}^{n_1 \times n_2}$$ with $$m < n_1n_2$$에 대해 아래의 measurement vector를 가지고 있다고 하고 $$y$$에서 $$X$$를 복원하는 문제를 고려해 봅시다.
+
+$$y = \mathcal{A}(X) \in \mathbb{C}^{m}.$$
+
+문제를 풀기 위해서 $$X$$의 rank $$r$$에 대해 $$r < min\{n_1, n_2\}$$라고 가정합니다. 그럼 다음의 최적화 문제를 생각할 수 있습니다.
+
+$$min~rank(X)~~\textrm{subject to}~~\mathcal{A}(X) = y.$$
+
+이제 singular value decomposition을 이용해서 $$X$$는 다음과 같이 쓸 수 있습니다.
+
+$$\tag{2} X = \sum_{s=1}^n\sigma_s u_s v_s^*$$
+
+여기에서 $$n=min \{n_1, n_2\}$$이고, $$\sigma_1 \geq \sigma_2 \geq \cdots \geq \sigma_n \geq 0$$은 singular value입니다. 이때 $$X$$의 rank가 $$r$$인 것과 $$\sigma(X)$$(vector of singular values of $$X$$)가 $$r$$-sparse인 것은 동치입니다. 따라서 (2)는 다음과 같이 재구성할 수 있습니다.
+
+$$min \| X \|_* ~~\textrm{subject to}~~ \mathcal{A}(Z) = y.$$
+
+여기서 $$\| X \|_*$$는 nuclear norm으로 singular values의 $$$l_1$-norm으로 정의됩니다.
+
+$$\| X \|_*=\| sigma(X) \|_1.$
+
+이 문제는 vector signal과 비슷한 알고리듬으로 해결 가능합니다.
