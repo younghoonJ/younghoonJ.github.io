@@ -78,7 +78,7 @@ $$y = f(x) + e$$
 
 $$f(x) = \sum x_s \phi_s(x) $$
 
-처럼 나타냅니다. 이제 측정한 데이터를 이용해서 아래와 같이 measurement matrix $$
+이제 측정한 데이터를 이용해서 아래와 같이 measurement matrix $$
 A\in\mathbb{R}^{m\times N}$$를 만들 수 있습니다.
 
 $$A_{j,k} = \phi_k(x_j)$$
