@@ -55,7 +55,7 @@ $$ min \| x \|_0~~\textrm{subject to}~~Ax=y$$
 
 # Sparse Approximation
 
-Compressive sensing은 많은 signal이 sparse 하게 근사할 수 있다는 관찰로부터 시작되었다고 할 수 있습니다. 이런 관점에서 Compressive sensing은 `Sparse Approximation`의 하위 주제라고 생각할 수 있습니다. 하지만 Compressive sensing이 완전히 Sparse Approximation인 것은 아니며 이 둘은 보는 관점이나 수학적인 접근에 차이가 있습니다.
+Compressive sensing은 많은 signal이 sparse 하게 근사할 수 있다는 관찰로부터 시작되었다고 할 수 있습니다. 이런 관점에서 Compressive sensing은 `Sparse Approximation`의 하위 주제라고 생각할 수 있습니다. 하지만 Compressive sensing이 완전히 Sparse Approximation인 것은 아니며 이 둘은 보는 관점에는 차이가 있습니다.
 
 우선 Sparse Approximation에서 무엇을 하는지 살펴보겠습니다. 어떤 signal $$y\in\mathbb{C}^m$$을 정해진 벡터 $$a_1,...a_N\in\mathbb{C}^m$$, $$span{a_1,...a_N} = \mathbb{C}^m$$의 linear combination으로 나타낼 수 있다고 가정합시다. 이 벡터의 dictionary는 linear dependent해도 됩니다. 이제 $$a_1,...a_N$$를 columns로 가지는 $$A\in\mathbb{C}^{m \times N}$$ 생각하고 $$y$$의 sparsest representation을 찾는 다음의 문제를 생각해 봅시다.
 
@@ -112,8 +112,8 @@ $$\tag{2} X = \sum_{s=1}^n\sigma_s u_s v_s^*$$
 
 $$min \| X \|_* ~~\textrm{subject to}~~ \mathcal{A}(Z) = y.$$
 
-여기서 $$\| X \|_*$$는 nuclear norm으로 singular values의 $$$l_1$-norm으로 정의됩니다.
+여기서 $$\| X \|_*$$는 nuclear norm으로 singular values의 $$l_1$$-norm으로 정의됩니다.
 
-$$\| X \|_*=\| sigma(X) \|_1.$
+$$\| X \|_*=\| \sigma(X) \|_1.$$
 
 이 문제는 vector signal과 비슷한 알고리듬으로 해결 가능합니다.
