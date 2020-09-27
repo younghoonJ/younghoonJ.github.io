@@ -8,13 +8,13 @@ hasmath: true
 hascode: true
 ---
 
-Jekyll Blog에서 LaTex으로 표현된 수식을 렌더링 하기 위해서 Kahn Academy에서 시작된 프로젝트인 [`KaTex` (katex.org)](https://katex.org/)를 사용합니다.
+Jekyll Blog에서 LaTex으로 표현된 수식을 렌더링 하기 위해서 Kahn Academy에서 시작된 프로젝트인 [KaTex (katex.org)](https://katex.org/)를 사용합니다.
 
 <!--more-->
 
 Katex를 사용하면 Jekyll 빌드 시에 js까지 빌드해서 LaTex markup을 html로 변경해 주고, client side에서 font와 css로 이쁘게 포장해서 보여줍니다.
 
-우선 [`여기`](https://github.com/kramdown/math-katex)에서 필요한 종속성을 확인해 보면 다음과 같습니다.
+우선 [여기](https://github.com/kramdown/math-katex)에서 필요한 종속성을 확인해 보면 다음과 같습니다.
 
 - Ruby gem kramdown-math-katex
 - Ruby gem katex,
@@ -25,7 +25,7 @@ Katex를 사용하면 Jekyll 빌드 시에 js까지 빌드해서 LaTex markup을
   - Ruby gem duktape,
   - Node.js
 
-우선 js가 필요한데 고민하지 말고 [`Node.js` (https://nodejs.org)](https://nodejs.org)를 설치합시다. 그리고 `gen install`을 합시다. 해보면 `kramdown-math-katex`만 설치해도 나머지 gem도 같이 설치됩니다.
+우선 js가 필요한데 고민하지 말고 [Node.js (https://nodejs.org)](https://nodejs.org)를 설치합시다. 그리고 `gen install`을 합시다. 해보면 `kramdown-math-katex`만 설치해도 나머지 gem도 같이 설치됩니다.
 
 ```powershell
 PS D:\> gem install kramdown-math-katex
@@ -50,7 +50,7 @@ kramdown:
   math_engine: katex
 ```
 
-이제 css와 font를 가지고 와야 하는데 [`여기`](https://katex.org/docs/autorender.html)에 있는 CDN을 사용하거나 [`여기`](https://github.com/KaTeX/KaTeX/releases)에서 다운받아 직접 프로젝트에 포함하면 됩니다. 저는 `/assets/katex` 라는 디렉터리를 만들고 그곳에 `/fonts`와 katex.min.css를 복사했습니다.
+이제 css와 font를 가지고 와야 하는데 [여기](https://katex.org/docs/autorender.html)에 있는 CDN을 사용하거나 [여기](https://github.com/KaTeX/KaTeX/releases)에서 다운받아 직접 프로젝트에 포함하면 됩니다. 저는 `/assets/katex` 라는 디렉터리를 만들고 그곳에 `/fonts`와 katex.min.css를 복사했습니다.
 
 마지막으로 Latex 렌더링이 필요한 페이지의 `<head>`부분에 css를 추가하면 됩니다.
 ```html
