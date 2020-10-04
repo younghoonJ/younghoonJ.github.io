@@ -4,7 +4,10 @@ hasmath: true
 ---
 
 -- fixme -- : width for mobile view
+<<<<<<< HEAD
 -- fixme -- : rewrite below
+=======
+>>>>>>> cd9834fc44992892d4dbd18c0031290eb8ff53e0
 
 ### Younghoon Jung (정영훈)
 - Senior Engineer at Samsung SDS 

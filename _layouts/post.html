@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+<<<<<<< HEAD
 
 <!-- Begin Article -->
 <article class="container">
@@ -14,6 +15,22 @@ layout: default
           <div>
             {{ author.display_name }} | {{page.date | date_to_string}}
             <span class="author-description">{{ author.description }}</span>
+=======
+<article class="main-content my-2">
+  <div class="container px-0">
+    <div class="card mx-auto border-0 rounded-0">
+      <div class="card-body px24 py-0">
+        <div class="wrapper">
+          <div>
+            <h2 class="post-title text-center mt-4 mb-2">{{page.title}}</h2>
+          </div>
+          <div class="text-center mt-1 mb-0">{{page.author}}</div>
+          <div class="text-center mt-0 mb-2">{{ page.date | date_to_string }}</div>
+          <div class="card-post-tags text-center">
+            {% for tag in page.tags %}
+            <div class="chip bg-light" style="font-size: 0.9em">{{tag}}</div>
+            {% endfor %}
+>>>>>>> cd9834fc44992892d4dbd18c0031290eb8ff53e0
           </div>
         </div>
         <div class="row py-2">

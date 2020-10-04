@@ -1,6 +1,10 @@
 ---
 layout: post
+<<<<<<< HEAD
 author: younghoon
+=======
+author: Younghoon, Jung
+>>>>>>> cd9834fc44992892d4dbd18c0031290eb8ff53e0
 title: Add LaTeX support to Jekyll site
 tags: [latex, katex, math, equation, github pages, Jekyll]
 description: Integrating KaTex with Jekyll site.
@@ -12,7 +16,11 @@ Jekyll Blog에서 LaTex으로 표현된 수식을 렌더링 하기 위해서 Kah
 
 <!--more-->
 
+<<<<<<< HEAD
 Katex를 사용하면 Jekyll 빌드 시에 js까지 빌드해서 LaTex markup을 html로 변경해 주고, client side에서 font와 css로 예쁘게 포장해서 보여줍니다.
+=======
+Katex를 사용하면 Jekyll 빌드 시에 js까지 빌드해서 LaTex markup을 html로 변경해 주고, client side에서 font와 css로 이쁘게 포장해서 보여줍니다.
+>>>>>>> cd9834fc44992892d4dbd18c0031290eb8ff53e0
 
 우선 [여기](https://github.com/kramdown/math-katex)에서 필요한 종속성을 확인해 보면 다음과 같습니다.
 
