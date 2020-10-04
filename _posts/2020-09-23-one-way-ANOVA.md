@@ -1,10 +1,6 @@
 ---
 layout: post
-<<<<<<< HEAD
 author: younghoon
-=======
-author: Younghoon, Jung
->>>>>>> cd9834fc44992892d4dbd18c0031290eb8ff53e0
 title: One-way ANOVA
 tags: [ANOVA, one-way ANOVA, hypothesis testing, statistics]
 description: Explains one-way ANOVA.

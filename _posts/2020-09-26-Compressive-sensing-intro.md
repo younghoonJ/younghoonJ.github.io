@@ -1,10 +1,6 @@
 ---
 layout: post
-<<<<<<< HEAD
 author: younghoon
-=======
-author: Younghoon, Jung
->>>>>>> cd9834fc44992892d4dbd18c0031290eb8ff53e0
 title: Compressive sensing - intro
 tags: [compressive sensing, compressed sensing, sparse recovery, sparse solution, approximate solution, machine learning, LASSO]
 description: What is compressive sensing?

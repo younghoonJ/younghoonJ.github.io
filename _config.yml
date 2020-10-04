@@ -32,7 +32,6 @@ defaults:
       path: ""
     values:
       layout: "default"
-<<<<<<< HEAD
       blogtitle: "Q"
       author: "Younghoon Jung"
 
@@ -49,11 +48,6 @@ paginate: 6
 paginate_path: /page:num/
 
 # Archives
-=======
-      blogtitle: "DOCs"
-      author: "Younghoon Jung"
-
->>>>>>> cd9834fc44992892d4dbd18c0031290eb8ff53e0
 jekyll-archives:
   enabled: [tags]
   layouts:
