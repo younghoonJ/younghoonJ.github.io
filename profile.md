@@ -1,6 +1,10 @@
 ---
 layout: profile
+hasmath: true
 ---
+
+-- fixme -- : width for mobile view
+-- fixme -- : rewrite below
 
 ### Younghoon Jung (정영훈)
 - Senior Engineer at Samsung SDS 
@@ -42,7 +46,7 @@ layout: profile
   - Defined the Hilbert spaces in which the Neumann-Poincare operators become self-adjoint, doubly-infinite matrix operators, and the layer potential operators have explicit series representations in terms of Faber's polynomials and Grunsky's coefficients.
   - Proved the integral representation of exterior conformal mapping coefficients
   - Proposed the novel numerical scheme to solve 2D interface problems.
-  - Estimated the decay rate of the eigenvalues of the Neumann-Poincar\'{e} operator for 2-dimensional, $C^{1,\alpha},\alpha>1/2$ domains.
+  - Estimated the decay rate of the eigenvalues of the Neumann-Poincar\'{e} operator for 2-dimensional, $$C^{1,\alpha},\alpha>1/2$$ domains.
   - Derived the spectral resolution of the Neumann-Poincare operators on touching disks domains.
 - Asymptotics and computation of the gradient blow-up solutions (2014-2016, at KAIST)
   - Developed an integral equation solver for 2D Lame system.
@@ -59,10 +63,11 @@ layout: profile
 - NIMS Expert training for Industrical mathematics (Aug. 2018)
 
 ### Publications and Preprints
- 1. A decay estimate for the eigenvalues of the Neumann-Poincaré operator in two dimensions using the Grunsky coefficients, YH Jung, M Lim. (2019). Proc. Amer. Math. Soc., electronically published on October 18, 2019, DOI: https://doi.org/10.1090/proc/14785 (to appear in print).
- 1. Spectral analysis of the Neumann-Poincare operator on touching disks and analysis of plasmon resonance, YH Jung, M Lim. arXiv preprint arXiv:1810.12486
- 1. A new series solution method for the transmission problem. YH Jung, M Lim. arXiv preprint arXiv:1803.09458
- 1. A joint sparse recovery framework for accurate reconstruction of inclusions in elastic media. Yoo, J., Jung, Y., Lim, M., Ye, J. C., & Wahab, A. (2017). SIAM Journal on Imaging Sciences, 10(3), 1104-1138.
+ 1. Y. Jung and M. Lim, " A decay estimate for the eigenvalues of the Neumann-Poincaré operator in two dimensions using the Grunsky coefficients",  Proc. Amer. Math. Soc., 148(2):591–600 (2020)
+ 2. Y. Jung and M. Lim, " Spectral analysis of the Neumann Poincare operator on touching disks and analysis of plasmon resonance", arXiv: 1810.12486
+ 3. Y. Jung and M. Lim,  "A new series solution method for the transmission problem", arXiv:1803.09458
+ 4. J. Yoo, Y. Jung, M. Lim,  J. C. Ye and A. Wahab, " A Joint Sparse Recovery Framework for Accurate Reconstruction of Inclusions in Elastic Media",  SIAM Journal on Imaging Sciences 10 (3), 1104-1138 (2017)
+ 5. E. Hong,  E. Lee, Y. Jung and  M. Lim, "Numerical solution to the interface problem in a general domain using Moser's deformation method", Journal of Applied Mathematics and Computing  (2020)
 
 ### Presentations
 1. Series expansion of single layer potential and Neumann-Poincare operator, KSIAM 2018 Jeju, Korea.

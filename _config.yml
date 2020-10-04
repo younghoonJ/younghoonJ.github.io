@@ -1,6 +1,19 @@
+name: Younghoon, Jung
+title: Quest for Information
+description: -- write description --
+
+# Authors
+authors:
+  younghoon:
+    name: Younghoon, Jung
+    display_name: Younghoon, Jung
+    email: to.younghoon.jung@gmail.com
+    web: https://younghoonjung.com
+
 highlighter: none
 markdown: kramdown
 kramdown:
+  math_engine: katex
   syntax_highlighter_opts:
     disable: true
 
@@ -19,12 +32,22 @@ defaults:
       path: ""
     values:
       layout: "default"
-      blogtitle: "Byways"
+      blogtitle: "Q"
       author: "Younghoon Jung"
 
 plugins:
+  - jekyll-paginate
   - jekyll-archives
 
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Pagination
+paginate: 6
+paginate_path: /page:num/
+
+# Archives
 jekyll-archives:
   enabled: [tags]
   layouts:
@@ -34,8 +57,8 @@ jekyll-archives:
     category: category-archive
     tag: tag-archive
   permalinks:
-    year: '/archives/:year/'
-    month: '/archives/:year/:month/'
-    day: '/archives/:year/:month/:day/'
-    tag: '/archives/tag/:name/'
-    category: '/archives/category/:name/'
+    year: "/archives/:year/"
+    month: "/archives/:year/:month/"
+    day: "/archives/:year/:month/:day/"
+    tag: "/archives/tag/:name/"
+    category: "/archives/category/:name/"

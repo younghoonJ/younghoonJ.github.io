@@ -1,0 +1,48 @@
+.site-content {
+  max-width: 1040px !important;
+}
+
+.nav-wrapper {
+  max-width: 1140px !important;
+}
+.nav-brand {
+  font-size: 1.9rem;
+  font-weight: 400;
+  color: #ccb285;
+}
+
+#profilelink,
+#opensearch,
+#opencloud {
+  background-color: transparent;
+  color: #fff;
+}
+
+.card-author {
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.author-thumbnail {
+  width: 40px;
+  height: 40px;
+  margin-right: 13px;
+  border-radius: 100%;
+}
+
+.author-meta .author-name,
+.author-meta .post-date{
+  color: $gray-dk-300;
+}
+
+.card-title {
+  font-weight: 400 !important;
+}
+
+p code {
+  background-color: #f9f2f4;
+  color: #c7254e;
+  padding: 0.2em;
+}

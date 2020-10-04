@@ -1,16 +1,26 @@
 ---
-layout: default
+layout: nav-foot
 title: Archive
 ---
-
-
-
-<h1>Archive of posts with {{ page.type }} '{{ page.title }}'</h1>
-<ul class="posts">
-    {% for post in page.posts %}
-    <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    </li>
-    {% endfor %}
-</ul>
+<div class="main-content my-2">
+  <div class="container px-0">
+    <p class="tag-archive-browsingtags"> BROWSING TAGS</p>
+    <h1 class="tag-archive-title my-1 mt-2 py-1">
+      {{ page.title }}
+    </h1>
+    <p class="mt-0 fw-300"> A place where I talk about the keyword {{page.title}}.</p>
+    <div class="card mt-3 card-custom mx-auto card-shadow">
+      <div class="card-body px-3">
+        {% for post in page.posts %}
+        <a href="{{ post.url | relative_url }}">
+          <div class="text-left py-2">
+            <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+            -
+            {{ post.title }}
+          </div>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

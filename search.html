@@ -1,19 +1,16 @@
 ---
+layout: default
 ---
-<!-- Html Elements for Search -->
-<div id="search-container">
-    <input type="text" id="search-input" placeholder="search...">
-    <ul id="results-container"></ul>
+<div class="search">
+  <div class="search-input-wrap">
+    <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search this site" aria-label="Search this site" autocomplete="off">
+    <input type="submit" value="search"/>
+  </div>
+  <div id="search-results" class="search-results"></div>
 </div>
 
-<!-- Script pointing to search-script.js -->
-<script src={{ "/assets/js/search-script.js" | prepend: site.baseurl }}></script>
-
-<!-- Configuration -->
-<script>
-    SimpleJekyllSearch({
-        searchInput: document.getElementById('search-input'),
-        resultsContainer: document.getElementById('results-container'),
-        json: '/searchinfo.json'
-    })
-</script>
+<script src="assets/js/lunr.min.js"></script>
+  <script src="assets/js/search.js"></script>
+  <script>
+    initSearch();
+  </script>
