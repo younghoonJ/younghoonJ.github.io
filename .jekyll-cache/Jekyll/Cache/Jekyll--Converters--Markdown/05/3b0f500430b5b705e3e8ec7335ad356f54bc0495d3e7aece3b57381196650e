@@ -1,0 +1,123 @@
+I"�<p><span style="float: right; "><a href="/assets/cv_Jungyounghoon_20201201.pdf"><strong>&gt; Download cv</strong></a> </span>
+<br /></p>
+
+<h2 id="description">Description</h2>
+<p>Younghoon Jung, Ph.D., is a Senior Engineer working for the Analytics platform Lab of Samsung SDS. He develops Data Analytics Workflow tool called Brightics A. I. and contributes open source software Brightics Studio.</p>
+
+<p>Younghoon Jung holds a Ph.D. in Mathematics from the KAIST, Korea. During his Ph.D. he conducted research on Interface problems, in particular, he developed a new geometric series solution method for harmonic problems based on the geometric function theory.</p>
+
+<h3 id="younghoon-jung-정영훈">Younghoon Jung (정영훈)</h3>
+<ul>
+  <li>Ph.D. in Mathematics</li>
+  <li>Senior Engineer at Samsung SDS</li>
+  <li>E-mail: hapy1010@kaist.ac.kr, to.younghoon.jung@gmail.com</li>
+  <li>younghoonjung.com</li>
+  <li>https://www.linkedin.com/in/yh-jung/</li>
+</ul>
+
+<h3 id="technical-strengths">Technical Strengths</h3>
+<ul>
+  <li>Programming language and frameworks
+    <ul>
+      <li><strong>Python</strong>, <strong>MATLAB</strong>, <strong>Julia</strong>, JAVA, Scala, C++, SQL</li>
+      <li>Spark, Keras</li>
+    </ul>
+  </li>
+  <li>Mathematical Analysis
+    <ul>
+      <li>PDE, Inverse problems, Asymptotic analysis, Scientific computing</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="education">Education</h3>
+<ul>
+  <li>Ph.D. Mathematical Sciences, <span style="float: right; ">Sep. 2014 ~Feb. 2019</span>
+    <ul>
+      <li>KAIST, Daejeon, Republic of Korea</li>
+      <li>Dissertation: Analysis and numerical computation on the transmission problem based on the geometric function theory.</li>
+      <li>Advisor: Mikyoung Lim</li>
+    </ul>
+  </li>
+  <li>M.S. Mathematical Sciences, <span style="float: right; ">Sep.2012~Aug. 2014</span>
+    <ul>
+      <li>KAIST, Daejeon, Republic of Korea</li>
+      <li>Advisor: Mikyoung Lim</li>
+    </ul>
+  </li>
+  <li>B.E. Mechanical Engineering (Double Major in Mathematical Sciences), <span style="float: right; ">Feb.2008~Aug. 2012</span>
+    <ul>
+      <li>KAIST, Daejeon, Republic of Korea</li>
+    </ul>
+  </li>
+  <li>Korea Science Academy, <span style="float: right; ">Mar. 2005 ~ Feb. 2008</span></li>
+</ul>
+
+<h3 id="project">Project</h3>
+<ul>
+  <li>Brightics Studio <strong>Samsung SDS</strong> <span style="float: right; ">2019.12-Present</span>
+    <ul>
+      <li>An open source data analysis workflow tool.</li>
+    </ul>
+  </li>
+  <li>Spark-function developement - Brightics A.I. <strong>Samsung SDS</strong> <span style="float: right; ">2019.12-Present</span>
+    <ul>
+      <li>Spark function for Brightics v3.7 development</li>
+      <li>Scala(Apache Spark)</li>
+    </ul>
+  </li>
+  <li>Python SQL Query Executor - Brightics A.I. <strong>Samsung SDS</strong> <span style="float: right; ">2019.03-Present</span>
+    <ul>
+      <li>Fast SQL query executor development on Python-Pandas</li>
+      <li>Python(Pandas), JAVA(Apache Calcite)</li>
+    </ul>
+  </li>
+  <li>Guided Analytics - Brightics A.I. <strong>Samsung SDS</strong> <span style="float: right; ">2019.04-2019.11</span>
+    <ul>
+      <li>Guided Analytics (Machine Learning automation) module development of Brightics A.I.</li>
+      <li>Scala(Apache Spark)</li>
+    </ul>
+  </li>
+  <li>Gradient estimates for composites and its applications <strong>KAIST</strong> <span style="float: right; ">2016-2019</span>
+    <ul>
+      <li>Mathematics research.</li>
+    </ul>
+  </li>
+  <li>Asymptotics and computation of the gradient blow-up solutions <strong>KAIST</strong> <span style="float: right;">2014-2016</span>
+    <ul>
+      <li>Mathematics research.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="experience">Experience</h3>
+<ul>
+  <li>Teaching Asisstant <span style="float: right;">Sep. 2012 - Dec. 2018</span>
+    <ul>
+      <li>Undergraduate courses-Analysis I, Analysis II, Fourier Analysis, Introduction to Differential Geometry, Introduction to Linear Algebra , Calculus I, Calculus II</li>
+      <li>Graduate courses - Real Analysis, Complex Analysis.</li>
+    </ul>
+  </li>
+  <li>Coursera staff, TA  <span style="float: right;">2017</span>
+    <ul>
+      <li>Introduction to Ordinary Differential Equations (Prof. Kwon.)</li>
+    </ul>
+  </li>
+  <li>KAIST OLEV Intership <span style="float: right;">Summer 2011</span></li>
+</ul>
+
+<h3 id="publications-and-preprints">Publications and Preprints</h3>
+<ol>
+  <li><strong>Y. Jung</strong> and M. Lim, “ Spectral analysis of the Neumann Poincare operator on touching disks and analysis of plasmon resonance”, arXiv: 1810.12486</li>
+  <li><strong>Y. Jung</strong> and M. Lim,  “A new series solution method for the transmission problem”, arXiv:1803.09458</li>
+  <li>E. Hong,  E. Lee, <strong>Y. Jung</strong> and  M. Lim, “Numerical solution to the interface problem in a general domain using Moser’s deformation method”, <strong>Journal of Applied Mathematics and Computing</strong> (2020)</li>
+  <li><strong>Y. Jung</strong> and M. Lim, “ A decay estimate for the eigenvalues of the Neumann-Poincaré operator in two dimensions using the Grunsky coefficients”,  <strong>Proc. Amer. Math.</strong> Soc., 148(2):591–600 (2020)</li>
+  <li>J. Yoo, <strong>Y. Jung</strong>, M. Lim,  J. C. Ye and A. Wahab, “ A Joint Sparse Recovery Framework for Accurate Reconstruction of Inclusions in Elastic Media”, <strong>SIAM Journal on Imaging Sciences</strong> 10 (3), 1104-1138 (2017)</li>
+</ol>
+
+<h3 id="presentations">Presentations</h3>
+<ol>
+  <li>Series expansion of single layer potential and Neumann-Poincare operator, contributed talk, KSIAM 2018 Annual Meeting, Jeju, Korea.</li>
+  <li>Series representation of layer potential operators for the transmission problem, contributed talk, ICIP 2018 Singapore, Singapore.</li>
+</ol>
+:ET

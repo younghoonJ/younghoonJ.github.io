@@ -1,5 +1,10 @@
-I"�<p><span style="float: right; "><a href="/assets/cv_Jungyounghoon_20201201.pdf"><strong>&gt; Download cv</strong></a> </span>
+I"�<p><span style="float: right; "><a href="/assets/cv_Jungyounghoon_20201201.pdf"><strong>&gt; Download cv</strong></a> </span>
 <br /></p>
+
+<h2 id="description">Description</h2>
+<p>Younghoon Jung, Ph.D., is a Senior Engineer working for the Analytics platform Lab of Samsung SDS. He develops Data Analytics Workflow tool called Brightics A. I. and contributes open source software Brightics Studio.</p>
+
+<p>Younghoon Jung holds a Ph.D. in Mathematics from the KAIST, Korea. During his Ph.D. he conducted research on Interface problems, in particular, he developed <strong>a new geometric series solution method</strong> for harmonic problems based on the geometric function theory.</p>
 
 <h3 id="younghoon-jung-정영훈">Younghoon Jung (정영훈)</h3>
 <ul>
@@ -50,8 +55,8 @@
 
 <h3 id="project">Project</h3>
 <ul>
-  <li>Brightics Studio <strong>Samsung SDS</strong> <span style="float: right; ">2019.12-Present&lt;/
-</span>    <ul>
+  <li>Brightics Studio <strong>Samsung SDS</strong> <span style="float: right; ">2019.12-Present</span>
+    <ul>
       <li>An open source data analysis workflow tool.</li>
     </ul>
   </li>
