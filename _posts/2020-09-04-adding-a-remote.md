@@ -3,6 +3,7 @@ layout: post
 author: younghoon
 title: Adding a remote
 tags: [git, github, remote]
+category: Programming
 description: Explains git remote command.
 hascode: true
 ---

@@ -3,6 +3,7 @@ layout: post
 author: younghoon
 title: Delegation pattern
 tags: [Delegation pattern, Design pattern, Reusability pattern, julia]
+category: Programming
 description: Explains what the delegation pattern is and provide an example implementation in julia.
 hascode: true
 ---

@@ -3,6 +3,7 @@ layout: post
 author: younghoon
 title: Compressive sensing - intro
 tags: [compressive sensing, compressed sensing, sparse recovery, sparse solution, approximate solution, machine learning, LASSO]
+category: Mathematics
 description: What is compressive sensing?
 hasmath: true
 ---

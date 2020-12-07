@@ -1,25 +1,14 @@
----
-layout: compress
----
-
 <!DOCTYPE html>
 <html lang="en">
-  {% include head.html %} {% capture layout %} {% if page.layout %}
-  {{page.layout}}-layout{% endif %} {% endcapture %}
-
-  <body class="{{layout}}">
-    {% include navbar.html %}
-    <div class="mx-auto site-content">
-      <div class="container">
-        {% if page.url == "/" %}
-        <div class="mainheading">
-          <h1 class="sitetitle">{{ site.title }}</h1>
-          <p class="lead">{{ site.description }}</p>
-        </div>
-        {% endif %}
-        <div class="main-content">{{ content }}</div>
-      </div>
-      {% include footer.html %}
-    </div>
-  </body>
+<head>
+{% include meta_tags/base.html %}
+{% include externals/styling.html %}
+</head>
+<body>
+<div class="wrapper">
+{% include header.html %}
+{{ content }}
+</div>
+{% include externals/scripting.html %}
+</body>
 </html>

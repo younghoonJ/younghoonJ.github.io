@@ -3,6 +3,7 @@ layout: post
 author: younghoon
 title: Sparsity and Compressibility
 tags: [compressive sensing, sparsity, compressibility]
+category: Mathematics
 description: What is compressive sensing?
 hasmath: true
 ---

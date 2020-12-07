@@ -1,64 +1,22 @@
-name: Younghoon, Jung
-title: Quest for Information
-description: -- write description --
+# Site settings
+title: Younghoon, Jung
+description: Blog of Younghoon Jung.
 
-# Authors
-authors:
-  younghoon:
-    name: Younghoon, Jung
-    display_name: Younghoon, Jung
-    email: to.younghoon.jung@gmail.com
-    web: https://younghoonjung.com
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "younghoonjung.com" # the base hostname & protocol for your site
 
-highlighter: none
+author:
+  fullname: Younghoon Jung
+  github: younghoonJ
+  linkedin: yh-jung
+  email: to.younghoon.jung@gmail.com
+
+
+# Syntax highlighting
+highlightstyle: 'agate'
+styles: [agate, androidstudio, arta, asceti, atelier-cave.dark, atelier-cave.light, atelier-dune.dark, atelier-dune.light, atelier-estuary.dark, atelier-estuary.light, atelier-forest.dark, atelier-forest.light, atelier-heath.dark, atelier-heath.light, atelier-lakeside.dark, atelier-lakeside.light, atelier-plateau.dark, atelier-plateau.light, atelier-savanna.dark, atelier-savanna.light, atelier-seaside.dark, atelier-seaside.light, atelier-sulphurpool.dark, atelier-sulphurpool.light, brown_paper, codepen-embed, color-brewer, dark, darkula, default, docco, far, foundation, github, github-gist, googlecode, grayscale, hopscotch, hybrid, idea, ir_black, kimbie.dark, kimbie.light, magula, mono-blue, monokai, monokai_sublime, obsidian, paraiso.dark, paraiso.light, pojoaque, railscast, rainbow, school_book, solarized_dark, solarized_light, styles_list.txt, sunburst, tomorrow, tomorrow-night-blue, tomorrow-night-bright, tomorrow-night, tomorrow-night-eightie, v, xcode, zenburn]
+
+
+# Build settings
+highlighter: null
 markdown: kramdown
-kramdown:
-  math_engine: katex
-  syntax_highlighter_opts:
-    disable: true
-
-defaults:
-  - scope:
-      path: ""
-      type: "authors"
-    values:
-      layout: "author"
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  - scope:
-      path: ""
-    values:
-      layout: "default"
-      blogtitle: "Q"
-      author: "Younghoon Jung"
-
-plugins:
-  - jekyll-paginate
-  - jekyll-archives
-
-sass:
-  sass_dir: _sass
-  style: compressed
-
-# Pagination
-paginate: 6
-paginate_path: /page:num/
-
-# Archives
-jekyll-archives:
-  enabled: [tags]
-  layouts:
-    year: year-archive
-    month: month-archive
-    day: day-archive
-    category: category-archive
-    tag: tag-archive
-  permalinks:
-    year: "/archives/:year/"
-    month: "/archives/:year/:month/"
-    day: "/archives/:year/:month/:day/"
-    tag: "/archives/tag/:name/"
-    category: "/archives/category/:name/"
