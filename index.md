@@ -12,7 +12,7 @@ sitemap:
 	<p>I am a senior engineer working for the Analytics platform Lab of Samsung SDS. </p>
 
 </div>
-    <p>This site is under design modification.</p>
+    <p>This site is undergoing design modification.</p>
     <p>TODO - add LaTex Support</p>
     <p>TODO - change font</p>
     <p>TODO - change color</p>
