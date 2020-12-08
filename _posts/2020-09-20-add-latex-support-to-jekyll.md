@@ -74,10 +74,10 @@ $$e^{i\theta} = \cos{\theta} + i\sin{\theta}$$
 
 
 ```css
-.katex-display{
-  overflow-x: auto;
-  padding-top: 0.6rem;
-  padding-bottom: 0.6rem;
+.katex-display {
+  overflow-x: auto !important;
+  padding-top: 0.6rem !important;
+  padding-bottom: 0.6rem !important;
 }
 ```
 
