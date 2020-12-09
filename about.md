@@ -17,7 +17,7 @@ Younghoon Jung holds a Ph.D. in Mathematics from the KAIST, Korea. During his Ph
 ### Younghoon Jung (정영훈)
 - Ph.D. in Mathematics
 - Senior Engineer at Samsung SDS 
-- E-mail: hapy1010@kaist.ac.kr, to.younghoon.jung@gmail.com
+- E-mail: to.younghoon.jung@gmail.com
 - younghoonjung.com
 - https://www.linkedin.com/in/yh-jung/
 
