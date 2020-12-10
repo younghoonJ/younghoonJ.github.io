@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    {% include meta_tags/base.html %}
-    {% include externals/styling.html %}
-    {% if page.hasmath %}
-    <link rel="stylesheet" href="/assets/katex/katex.min.css" />
-    {% endif %}
-</head>
+{% include head.html %}
 
 <body>
-    <div class="wrapper">
-        {% include header.html %}
-        {{ content }}
+    <div class="body-wrapper container">
+        {% include navbar.html %}
+
+        <div class="container content-wrapper">
+            {{ content }}
+        </div>
+        {% include footer.html %}
     </div>
-    {% include externals/scripting.html %}
+    <script src="{{ "/assets/vendor/highlight/highlight.pack.js" | prepend: site.baseurl }}"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </body>
 
 </html>

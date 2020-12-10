@@ -1,0 +1,22 @@
+@mixin make-media($name) {
+  $value: map-get($grid-breakpoints, $name);
+
+  @if $value != null {
+    @media (min-width: $value) {
+      @content;
+    }
+  } @else {
+    @warn "No value could be retrieved from `#{$media-query}`. "
+      + "Please make sure it is defined in `$media-queries` map.";
+  }
+}
+
+@mixin make-container($gutter: $gutter-spacing) {
+  --bs-gutter-x: #{$gutter};
+
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) / 2);
+  padding-left: calc(var(--bs-gutter-x) / 2);
+  margin-right: auto;
+  margin-left: auto;
+} 

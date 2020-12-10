@@ -1,8 +1,13 @@
 ---
 layout: default
 ---
-{% include page/title.html %}
 
-{{ content }}
-
-{% include page/about.html %}
+<article class="container">
+    {% assign author = site.authors[page.author] %}
+    {% include title.html %}
+    <div class="">
+        {{author.name}} | {{page.date | date_to_string}}
+    </div>
+    <hr/>
+    {{ content }}
+</article>

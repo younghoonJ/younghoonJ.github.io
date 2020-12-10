@@ -5,11 +5,12 @@ description: Blog of Younghoon Jung.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "younghoonjung.com" # the base hostname & protocol for your site
 
-author:
-  fullname: Younghoon Jung
-  github: younghoonJ
-  linkedin: yh-jung
-  email: to.younghoon.jung@gmail.com
+authors:
+  younghoon:
+    name: Younghoon, Jung
+    github: younghoonJ
+    linkedin: yh-jung
+    email: to.younghoon.jung@gmail.com
 
 
 # Syntax highlighting

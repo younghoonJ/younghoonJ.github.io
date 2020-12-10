@@ -1,14 +1,13 @@
 ---
-layout: page
+layout: index
 title: Hello / \
 subtitle:
 sitemap:
   priority: 0.9
 ---
 
-<!-- <img src="{{ '/assets/img/pudhina.jpg' | prepend: site.baseurl }}" id="about-img"> -->
 
-<div id="describe-text">
+<div id="description container">
 	<p>I am a Senior Engineer working for the Analytics platform Lab of Samsung SDS. At SDS, I develope Brightics A.I. and contribute to an open-source software Brightics Studio. 
   </p>
   <p>
@@ -18,6 +17,5 @@ sitemap:
   <p>
   For more details, check out <a href='/about'><Strong>THIS</Strong></a>.
   </p>
-
 
 </div>
