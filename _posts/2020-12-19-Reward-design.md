@@ -16,7 +16,9 @@ hasmath: true
 ## Reward hypothesis (R.Sutton)
 Reward hypothesis는 reward를 이용해서 agent에게 training의 목적을 설명한다. 이 방식은 agent가 받는 보상의 누적 합의 기대값을 최대화 하는 방식이다.
 누적 보상은
+
 $$G_t := R_t + R_{t+1} + R_{t+2} + \cdots + R_{T}$$
+
 로 나타낼 수 있는데, $R_t$는 현 시간 $t$에서의 즉각적인 보상, $R_{T}$는 episode의 마지막에 받는 보상이다.
 
 이 설계에는 몇가지 문제점이 있다.
@@ -24,9 +26,13 @@ $$G_t := R_t + R_{t+1} + R_{t+2} + \cdots + R_{T}$$
 1. **Positive feedback loop**: 오랜 기간 행동 후 $100$ / 순간의 행동에 대해서 $1$로 return이 주어지는 경우 agent는 $1$을 얻는 행동만 계속 반복해서 유한한 에피소드 내에서 보상을 최대화 할 수 있다.
 
 시간의 문제에 대해서는 **Reward discounting**으로 대응할 수 있다. 합이 infinite으로 발산하는 것은 discounting factor $0 <\gamma <1$을 geometric하게 곱해서 수렴하도록 만들 수 있다. 즉, 누적 보상은 다음과 같다:
+
 $$G_t= R_t + \gamma R_{t+1} +\gamma^2 R_{t+2} + \cdots = \sum_{k=0}^{\infty}\gamma^k R_{t+k}.$$
+
 만약 reward가 모든 시간 $t$에 대해서 bounded라면, 즉, $|R_t|\leq M$ 이라면
+
 $$|G_t|\leq M\frac{1}{1-\gamma}$$
+
 이다.
 
 
@@ -41,5 +47,7 @@ $$|G_t|\leq M\frac{1}{1-\gamma}$$
 - **Reward scaling**: nonzero constant로 나누는 것은 괜찮다.
 
 - **Reward Shaping**: MDP의 모든 rewards $$R(s,a,s')$$에 optimal policy를 변화시키지 않고 **potential-based shaping function** $F(s,a,s')$을 더할 수 있다. 여기서,
+
 $$F(s,a,s') = \gamma \Psi(s') - \Psi(s)$$
+
 이다.  ([Policy invariance under reward transformations: Theory and application to reward shaping](https://people.eecs.berkeley.edu/~pabbeel/cs287-fa09/readings/NgHaradaRussell-shaping-ICML1999.pdf))
