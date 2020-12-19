@@ -1,25 +1,19 @@
----
-layout: compress
----
-
 <!DOCTYPE html>
 <html lang="en">
-  {% include head.html %} {% capture layout %} {% if page.layout %}
-  {{page.layout}}-layout{% endif %} {% endcapture %}
 
-  <body class="{{layout}}">
-    {% include navbar.html %}
-    <div class="mx-auto site-content">
-      <div class="container">
-        {% if page.url == "/" %}
-        <div class="mainheading">
-          <h1 class="sitetitle">{{ site.title }}</h1>
-          <p class="lead">{{ site.description }}</p>
+{% include head.html %}
+
+<body>
+    <div class="body-wrapper container">
+        {% include navbar.html %}
+
+        <div class="container content-wrapper">
+            {{ content }}
         </div>
-        {% endif %}
-        <div class="main-content">{{ content }}</div>
-      </div>
-      {% include footer.html %}
+        {% include footer.html %}
     </div>
-  </body>
+    <script src="{{ "/assets/vendor/highlight/highlight.pack.js" | prepend: site.baseurl }}"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</body>
+
 </html>

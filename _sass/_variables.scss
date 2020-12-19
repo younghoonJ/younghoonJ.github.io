@@ -132,36 +132,3 @@ $red-000: #f77e7e !default;
 $red-100: #f96e65 !default;
 $red-200: #e94c4c !default;
 $red-300: #dd2e2e !default;
-
-// button
-$btn-line-height: 1.5 !default;
-$btn-font-color: $gray-dk-200;
-$btn-base-color: #fdfdfd !default;
-$btn-border-width: $border-width !default;
-$btn-padding-y: 1rem !default;
-$btn-padding-x: 1rem !default;
-$btn-font-size: 1rem !default;
-$btn-border-radius: $border-radius;
-$btn-focus-box-shadow: 0 0 0 0.25rem $gray-dk-100 !default;
-$btn-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !default;
-
-// Cards
-
-$card-spacer-y: $spacing-unit !default;
-$card-spacer-x: $spacing-unit !default;
-$card-title-spacer-y: $spacing-unit / 2 !default;
-$card-border-width: $border-width !default;
-$card-border-radius: $border-radius !default;
-$card-border-color: rgba($black, 0.125) !default;
-$card-inner-border-radius: subtract($card-border-radius, $card-border-width) !default;
-$card-cap-padding-y: $card-spacer-y / 2 !default;
-$card-cap-padding-x: $card-spacer-x !default;
-$card-cap-bg: rgba($black, 0.03) !default;
-$card-cap-color: null !default;
-$card-height: null !default;
-$card-color: null !default;
-$card-bg: $white !default;
-
-$card-img-overlay-padding: $spacing-unit !default;
-
-$card-group-margin: $grid-gutter-width / 2 !default;

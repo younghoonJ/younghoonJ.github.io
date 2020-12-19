@@ -1,17 +1,22 @@
 <head>
-  <meta charset="UTF-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-    http-equiv="X-UA-Compatible"
-  />
-  {% if page.description %}
-  <meta name="description" content="{{ page.description }}" />
-  {% endif %}
-  <link rel="stylesheet" href="/assets/css/styles.css" />
-  {% if page.hascode %} <link rel="stylesheet" href="{{ "/assets/css/prism.css" | prepend: site.baseurl }}"> {% endif %} {% if page.hasmath %}
-  <link rel="stylesheet" href="/assets/katex/katex.min.css" />
-  {% endif %}
-
-  <title>{{page.title}}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% if page.title %} {{ page.title }} — {{ page.subtitle }} {% endif %} | {{ site.title }}</title>
+    {% if page.description %}
+    <meta name="description" content="{{ page.description }}" />
+    {% endif %}
+    {% if page.tags %}
+    <meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl }}">
+    {% if page.hasmath %}
+    <link rel="stylesheet" href="/assets/katex/katex.min.css" />
+    {% endif %}
+    <link rel="stylesheet" href="{{ "/assets/css/styles.css" | prepend: site.baseurl }}">
+    {% if site.styles contains site.highlightstyle %}
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/vendor/highlight/styles/{{ site.highlightstyle }}.css">
+    {% else %}
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/vendor/highlight/styles/agate.css">
+    {% endif %}
+    <link rel="stylesheet" href="{{ "/assets/vendor/font-awesome/css/font-awesome.css" | prepend: site.baseurl }}">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 </head>

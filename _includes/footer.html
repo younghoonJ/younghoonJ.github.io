@@ -1,12 +1,9 @@
-<footer class="container-fluid mt-3 footer-wrapper">
-  <p>
-    &#169;2020-2020
-    <a href="/" rel="copyright"> {{page.blogtitle}} </a>
-    All Rights Reserved | Template by Younghoon Jung
-  </p>
-  <script src="{{ "/assets/js/modal.js" | prepend: site.baseurl }}"></script>
-  {% if page.hascode %}
-  <script src="{{ "/assets/js/prism.js" | prepend: site.baseurl }}"></script>
-  {% endif %}
-
-</footer>
+<div class="footer">
+    <hr>
+    <div class="about__text">
+        <strong>&#169;2020-
+            <script>document.write(new Date().getFullYear());</script>
+            <a href="/" rel="copyright"> {{site.title}} </a> All Rights Reserved.</strong>
+        <br>Powered by <a href="https://jekyllrb.com/"> Jekyll</a> | Inspired by <a href="https://github.com/knhash/Pudhina">knhash /Pudhina</a> | Hosted by <a href="https://www.netlify.com/"> netlify</a>
+    </div>
+</div>

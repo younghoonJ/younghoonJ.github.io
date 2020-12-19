@@ -2,29 +2,12 @@
 layout: default
 ---
 
-<!-- Begin Article -->
 <article class="container">
-  <div class="row">
-    <!-- Implement Post Share -->
     {% assign author = site.authors[page.author] %}
-    <div class="col-md- 12">
-      <div class="post-heading">
-        <h1>{{page.title}}</h1>
-        <div class="row">
-          <div>
-            {{ author.display_name }} | {{page.date | date_to_string}}
-            <span class="author-description">{{ author.description }}</span>
-          </div>
-        </div>
-        <div class="row py-2">
-          {% for tag in page.tags %}
-          <div class="chip bg-light" style="font-size: 0.9em">{{tag}}</div>
-          {% endfor %}
-        </div>
-      </div>
-      <hr />
-      {{ content }}
+    {% include title.html %}
+    <div class="">
+        {{author.name}} | {{page.date | date_to_string}}
     </div>
-  </div>
+    <hr/>
+    {{ content }}
 </article>
-<!-- End Article -->
