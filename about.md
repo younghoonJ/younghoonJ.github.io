@@ -8,7 +8,7 @@ title: About
 <br>
 
 ## Description
-Younghoon Jung, Ph.D., is a Senior Engineer working for the Analytics platform Lab of Samsung SDS. He develops a Data Analytics Workflow tool called Brightics A. I. and contributes to an open-source software Brightics Studio.
+Younghoon Jung, Ph.D., is a Senior Engineer working at 'Platform Advanced Research Lab' of Samsung SDS, a new lab that started in Dec 2020. Prior to joining the current lab, he developed a data analysis workflow tool called Brightics A. I. and contributes to the open-source software Brightics Studio as a team member of the Analytics platform lab.
 
 Younghoon Jung has a variety of backgrounds including mechanical engineering, mathematics, and software development which allows him to understand the big picture of the problem like a mechanical engineer, analyze the principal details like a mathematician, and write a code.
 
