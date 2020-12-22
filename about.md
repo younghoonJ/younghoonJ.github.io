@@ -67,10 +67,10 @@ title: About
 
 ### Publications and Preprints
 1. **Y. Jung** and M. Lim, " Spectral analysis of the Neumann Poincare operator on touching disks and analysis of plasmon resonance", arXiv: 1810.12486
-1. **Y. Jung** and M. Lim,  "A new series solution method for the transmission problem", arXiv:1803.09458
-1. E. Hong,  E. Lee, **Y. Jung** and  M. Lim, "Numerical solution to the interface problem in a general domain using Moser's deformation method", **Journal of Applied Mathematics and Computing** (2020)
-1. **Y. Jung** and M. Lim, " A decay estimate for the eigenvalues of the Neumann-Poincaré operator in two dimensions using the Grunsky coefficients",  **Proc. Amer. Math.** Soc., 148(2):591–600 (2020)
-1. J. Yoo, **Y. Jung**, M. Lim,  J. C. Ye and A. Wahab, " A Joint Sparse Recovery Framework for Accurate Reconstruction of Inclusions in Elastic Media", **SIAM Journal on Imaging Sciences** 10 (3), 1104-1138 (2017)
+2. **Y. Jung** and M. Lim,  "Series expansions of the layer potential operators using the Faber polynomials and their applications to the transmission problem", Accepted, **SIAM Journal on Mathematical Analysis**
+3. E. Hong,  E. Lee, **Y. Jung** and  M. Lim, "Numerical solution to the interface problem in a general domain using Moser's deformation method", **Journal of Applied Mathematics and Computing** (2020)
+4. **Y. Jung** and M. Lim, " A decay estimate for the eigenvalues of the Neumann-Poincaré operator in two dimensions using the Grunsky coefficients",  **Proc. Amer. Math.** Soc., 148(2):591–600 (2020)
+5. J. Yoo, **Y. Jung**, M. Lim,  J. C. Ye and A. Wahab, " A Joint Sparse Recovery Framework for Accurate Reconstruction of Inclusions in Elastic Media", **SIAM Journal on Imaging Sciences** 10 (3), 1104-1138 (2017)
 
 ### Presentations
 1. Series expansion of single layer potential and Neumann-Poincare operator, contributed talk, KSIAM 2018 Annual Meeting, Jeju, Korea.
