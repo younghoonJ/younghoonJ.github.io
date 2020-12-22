@@ -8,7 +8,7 @@ sitemap:
 
 
 <div id="description container">
-	<p>I am a Senior Engineer working for at 'Platform Advanced Research Lab' of Samsung SDS, a new lab that started in Dec 2020. Prior to joining the current lab, I developed a data analysis workflow tool called Brightics A. I. and contributes to the open-source software Brightics as a team member of Analytics platform lab.
+	<p>I am a <strong>Senior Engineer</strong> working for at <strong>Platform Advanced Research Lab</strong> of <strong>Samsung SDS</strong>, a new lab that started in Dec 2020. Prior to joining the current lab, I developed a data analysis workflow tool called <strong>Brightics A. I.</strong> and contributes to the open-source software <strong>Brightics Studio</strong> as a team member of <strong>Analytics platform lab</strong>.
   </p>
 
   <p>
