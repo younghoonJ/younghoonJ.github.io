@@ -1,6 +1,6 @@
 ---
 layout: index
-title: Hello / \
+title: Hello
 subtitle:
 sitemap:
   priority: 0.9
@@ -8,7 +8,7 @@ sitemap:
 
 
 <div id="description container">
-	<p>I am a <strong>Senior Engineer</strong> working for at <strong>Platform Advanced Research Lab</strong> of <strong>Samsung SDS</strong>, a new lab that started in Dec 2020. Prior to joining the current lab, I developed a data analysis workflow tool called <strong>Brightics A. I.</strong> and contributes to the open-source software <strong>Brightics Studio</strong> as a team member of <strong>Analytics platform lab</strong>.
+	<p>I am a <strong>Senior Engineer</strong> working at <strong>Platform Advanced Research Lab</strong> of <strong>Samsung SDS</strong>. Prior to joining the current lab, I developed a data analysis workflow tool called <strong>Brightics A. I.</strong> and contributes to the open-source software <strong>Brightics Studio</strong> as a team member of <strong>Analytics platform lab</strong>.
   </p>
 
   <p>

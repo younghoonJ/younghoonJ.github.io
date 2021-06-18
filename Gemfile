@@ -1,6 +1,9 @@
 source "https://rubygems.org"
 
 gem "jekyll"
+gem "rexml", ">= 3.2.5"
+gem "kramdown", ">= 2.3.1"
+
 
 group :jekyll_plugins do
 #   gem "jekyll-feed"
@@ -9,7 +12,7 @@ group :jekyll_plugins do
   gem 'kramdown-math-katex'
 end
 
-# platforms :mingw, :x64_mingw, :mswin, :jruby do
-#   gem "tzinfo", "~> 1.2"
-#   gem "tzinfo-data"
-# end
+platforms :mingw, :x64_mingw, :mswin, :jruby do
+  gem "tzinfo"
+  gem "tzinfo-data"
+end

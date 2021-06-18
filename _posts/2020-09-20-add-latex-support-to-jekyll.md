@@ -26,7 +26,7 @@ Katex를 사용하면 Jekyll 빌드 시에 js까지 빌드해서 LaTex markup을
   - Ruby gem duktape,
   - Node.js
 
-우선 js가 필요한데 고민하지 말고 [Node.js (https://nodejs.org)](https://nodejs.org)를 설치하자. 그리고 `gen install`을 하자. 해보면 `kramdown-math-katex`만 설치해도 나머지 gem도 같이 설치된다.
+우선 js가 필요한데 고민하지 말고 [Node.js (https://nodejs.org)](https://nodejs.org)를 설치하자. 그리고 `gem install`을 하자. 해보면 `kramdown-math-katex`만 설치해도 나머지 gem도 같이 설치된다.
 
 ```powershell
 PS D:\> gem install kramdown-math-katex
