@@ -66,20 +66,20 @@ title: About
 - KAIST OLEV Intership <span style="float: right;">Summer 2011</span>
 
 ### Publications and Preprints
-1. Spectral analysis of the Neumann Poincare operator on touching disks and analysis of plasmon resonance
-  **Y. Jung** and M. Lim
+1. Spectral analysis of the Neumann Poincare operator on touching disks and analysis of plasmon resonance  
+  **Y. Jung** and M. Lim  
   arXiv: 1810.12486
-1. Series expansions of the layer potential operators using the Faber polynomials and their applications to the transmission problem.
-  **Jung, Younghoon**, and Mikyoung Lim.
+1. Series expansions of the layer potential operators using the Faber polynomials and their applications to the transmission problem.  
+  **Jung, Younghoon**, and Mikyoung Lim.  
   "**SIAM Journal on Mathematical Analysis** 53, no. 2 (2021): 1630-1669.
-1. Numerical solution to the interface problem in a general domain using Moser’s deformation method.
-  Hong, Eunhye, Eunjung Lee, **Younghoon Jung**, and Mikyoung Lim.
+1. Numerical solution to the interface problem in a general domain using Moser’s deformation method.  
+  Hong, Eunhye, Eunjung Lee, **Younghoon Jung**, and Mikyoung Lim.  
   **Journal of Applied Mathematics and Computing** 65, no. 1 (2021): 379-401.
-1. A decay estimate for the eigenvalues of the Neumann-Poincaré operator using the Grunsky coefficients.
-  **Jung, YoungHoon**, and Mikyoung Lim. 
+1. A decay estimate for the eigenvalues of the Neumann-Poincaré operator using the Grunsky coefficients.  
+  **Jung, YoungHoon**, and Mikyoung Lim.  
   **Proceedings of the American Mathematical Society** 148, no. 2 (2020): 591-600.
-1. A joint sparse recovery framework for accurate reconstruction of inclusions in elastic media.
-  Yoo, Jaejun, **Younghoon Jung**, Mikyoung Lim, Jong Chul Ye, and Abdul Wahab.
+1. A joint sparse recovery framework for accurate reconstruction of inclusions in elastic media.  
+  Yoo, Jaejun, **Younghoon Jung**, Mikyoung Lim, Jong Chul Ye, and Abdul Wahab.  
   **SIAM Journal on Imaging Sciences** 10, no. 3 (2017): 1104-1138.
 
 ### Presentations
