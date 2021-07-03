@@ -67,11 +67,20 @@ title: About
 
 ### Publications and Preprints
 1. Spectral analysis of the Neumann Poincare operator on touching disks and analysis of plasmon resonance
-  **Y. Jung** and M. Lim, arXiv: 1810.12486
-2. **Jung, Younghoon**, and Mikyoung Lim. "Series expansions of the layer potential operators using the Faber polynomials and their applications to the transmission problem." **SIAM Journal on Mathematical Analysis** 53, no. 2 (2021): 1630-1669.
-3. Hong, Eunhye, Eunjung Lee, **Younghoon Jung**, and Mikyoung Lim. "Numerical solution to the interface problem in a general domain using Moser’s deformation method." **Journal of Applied Mathematics and Computing** 65, no. 1 (2021): 379-401.
-4. **Jung, YoungHoon**, and Mikyoung Lim. "A decay estimate for the eigenvalues of the Neumann-Poincaré operator using the Grunsky coefficients." **Proceedings of the American Mathematical Society** 148, no. 2 (2020): 591-600.
-5. Yoo, Jaejun, **Younghoon Jung**, Mikyoung Lim, Jong Chul Ye, and Abdul Wahab. "A joint sparse recovery framework for accurate reconstruction of inclusions in elastic media." **SIAM Journal on Imaging Sciences** 10, no. 3 (2017): 1104-1138.
+  **Y. Jung** and M. Lim
+  arXiv: 1810.12486
+1. Series expansions of the layer potential operators using the Faber polynomials and their applications to the transmission problem.
+  **Jung, Younghoon**, and Mikyoung Lim.
+  "**SIAM Journal on Mathematical Analysis** 53, no. 2 (2021): 1630-1669.
+1. Numerical solution to the interface problem in a general domain using Moser’s deformation method.
+  Hong, Eunhye, Eunjung Lee, **Younghoon Jung**, and Mikyoung Lim.
+  **Journal of Applied Mathematics and Computing** 65, no. 1 (2021): 379-401.
+1. A decay estimate for the eigenvalues of the Neumann-Poincaré operator using the Grunsky coefficients.
+  **Jung, YoungHoon**, and Mikyoung Lim. 
+  **Proceedings of the American Mathematical Society** 148, no. 2 (2020): 591-600.
+1. A joint sparse recovery framework for accurate reconstruction of inclusions in elastic media.
+  Yoo, Jaejun, **Younghoon Jung**, Mikyoung Lim, Jong Chul Ye, and Abdul Wahab.
+  **SIAM Journal on Imaging Sciences** 10, no. 3 (2017): 1104-1138.
 
 ### Presentations
 1. Series expansion of single layer potential and Neumann-Poincare operator, contributed talk, KSIAM 2018 Annual Meeting, Jeju, Korea.
