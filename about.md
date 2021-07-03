@@ -41,12 +41,14 @@ title: About
 - Korea Science Academy, <span style="float: right; ">Mar. 2005 ~ Feb. 2008</span>  
 
 ### Project
-- Brightics Studio **Samsung SDS** <span style="float: right; ">2019.12-Present</span>
+- R&D Cloud Trace Dataset **Samsung SDS** <span style="float: right; ">2021.03-2021-05</span>
+  - Preparation and analysis of GPU cluster workload trace dataset.
+- Brightics Studio **Samsung SDS** <span style="float: right; ">2019.12-2020.12</span>
   - An open source data analysis workflow tool.
-- Spark-function developement - Brightics A.I. **Samsung SDS** <span style="float: right; ">2019.12-Present</span>
+- Spark-function developement - Brightics A.I. **Samsung SDS** <span style="float: right; ">2019.12-2020.12</span>
   - Spark function for Brightics v3.7 development
   - Scala(Apache Spark)
-- Python SQL Query Executor - Brightics A.I. **Samsung SDS** <span style="float: right; ">2019.03-Present</span>
+- Python SQL Query Executor - Brightics A.I. **Samsung SDS** <span style="float: right; ">2019.03-2020.12</span>
   - Fast SQL query executor development on Python-Pandas
   - Python(Pandas), JAVA(Apache Calcite)
 - Guided Analytics - Brightics A.I. **Samsung SDS** <span style="float: right; ">2019.04-2019.11</span>
@@ -66,20 +68,20 @@ title: About
 - KAIST OLEV Intership <span style="float: right;">Summer 2011</span>
 
 ### Publications and Preprints
-1. Spectral analysis of the Neumann Poincare operator on touching disks and analysis of plasmon resonance  
-  **Y. Jung** and M. Lim  
+1. Spectral analysis of the Neumann Poincare operator on touching disks and analysis of plasmon resonance<br>
+  **Y. Jung** and M. Lim<br>
   arXiv: 1810.12486
-1. Series expansions of the layer potential operators using the Faber polynomials and their applications to the transmission problem.  
-  **Jung, Younghoon**, and Mikyoung Lim.  
+1. Series expansions of the layer potential operators using the Faber polynomials and their applications to the transmission problem.<br>
+  **Jung, Younghoon**, and Mikyoung Lim.<br>
   **SIAM Journal on Mathematical Analysis** 53, no. 2 (2021): 1630-1669.
-1. Numerical solution to the interface problem in a general domain using Moser’s deformation method.  
-  Hong, Eunhye, Eunjung Lee, **Younghoon Jung**, and Mikyoung Lim.  
+1. Numerical solution to the interface problem in a general domain using Moser’s deformation method.<br>
+  Hong, Eunhye, Eunjung Lee, **Younghoon Jung**, and Mikyoung Lim.<br>
   **Journal of Applied Mathematics and Computing** 65, no. 1 (2021): 379-401.
-1. A decay estimate for the eigenvalues of the Neumann-Poincaré operator using the Grunsky coefficients.  
-  **Jung, YoungHoon**, and Mikyoung Lim.  
+1. A decay estimate for the eigenvalues of the Neumann-Poincaré operator using the Grunsky coefficients.<br>
+  **Jung, YoungHoon**, and Mikyoung Lim.<br>
   **Proceedings of the American Mathematical Society** 148, no. 2 (2020): 591-600.
-1. A joint sparse recovery framework for accurate reconstruction of inclusions in elastic media.  
-  Yoo, Jaejun, **Younghoon Jung**, Mikyoung Lim, Jong Chul Ye, and Abdul Wahab.  
+1. A joint sparse recovery framework for accurate reconstruction of inclusions in elastic media.<br>
+  Yoo, Jaejun, **Younghoon Jung**, Mikyoung Lim, Jong Chul Ye, and Abdul Wahab.<br>
   **SIAM Journal on Imaging Sciences** 10, no. 3 (2017): 1104-1138.
 
 ### Presentations
