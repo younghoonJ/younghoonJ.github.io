@@ -4,7 +4,7 @@ title: About
 # subtitle: An awesome person
 ---
 
-<span style="float: right; "><a href="{{ '/assets/cv_Jungyounghoon_20201201.pdf' | prepend: site.baseurl }}"><strong>> Download cv</strong></a> </span>
+<span style="float: right; "><a href="{{ '/assets/cv_Jungyounghoon_20210703.pdf' | prepend: site.baseurl }}"><strong>> Download cv</strong></a> </span>
 <br>
 
 ## Description
