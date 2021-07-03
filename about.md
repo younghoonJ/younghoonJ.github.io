@@ -71,7 +71,7 @@ title: About
   arXiv: 1810.12486
 1. Series expansions of the layer potential operators using the Faber polynomials and their applications to the transmission problem.  
   **Jung, Younghoon**, and Mikyoung Lim.  
-  "**SIAM Journal on Mathematical Analysis** 53, no. 2 (2021): 1630-1669.
+  **SIAM Journal on Mathematical Analysis** 53, no. 2 (2021): 1630-1669.
 1. Numerical solution to the interface problem in a general domain using Moser’s deformation method.  
   Hong, Eunhye, Eunjung Lee, **Younghoon Jung**, and Mikyoung Lim.  
   **Journal of Applied Mathematics and Computing** 65, no. 1 (2021): 379-401.
