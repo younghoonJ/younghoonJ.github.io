@@ -1,0 +1,68 @@
+[
+  {
+    "title": "Spectral analysis of the Neumann Poincare operator on touching disks and analysis of plasmon resonance",
+    "authors": [
+      "Y. Jung",
+      "M. Lim"
+    ],
+    "publication_date": 2018,
+    "journal": "arXiv preprint arXiv:1803.09458"
+  },
+  {
+    "title": "Series expansions of the layer potential operators using the Faber polynomials and their applications to the transmission problem",
+    "authors": [
+      "Jung, Younghoon",
+      "Mikyoung Lim"
+    ],
+    "publication_date": 2021,
+    "journal": "SIAM Journal on Mathematical Analysis",
+    "volume": 53,
+    "issue": 2,
+    "pages": 1630-1669,
+    "publisher": "Society for Industrial and Applied Mathematics"
+  },
+  {
+    "title": "Numerical solution to the interface problem in a general domain using Moser’s deformation method",
+    "authors": [
+      "Eunhye Hong",
+      "Eunjung Lee",
+      "Younghoon Jung",
+      "Mikyoung Lim"
+    ],
+    "publication_date": 2021,
+    "journal": "Journal of Applied Mathematics and Computing",
+    "volume": 65,
+    "issue": 1,
+    "pages": "379-401",
+    "publisher": "Springer Berlin Heidelberg"
+  },
+  {
+    "title": "A decay estimate for the eigenvalues of the Neumann-Poincaré operator using the Grunsky coefficients",
+    "authors": [
+      "Jung, YoungHoon",
+      "Mikyoung Lim"
+    ],
+    "publication_date": 2020,
+    "journal": "Proceedings of the American Mathematical Society",
+    "volume": 148,
+    "issue": 2,
+    "pages": "591-600",
+    "publisher": "American Mathematical Society"
+  },
+  {
+    "title": "A joint sparse recovery framework for accurate reconstruction of inclusions in elastic media",
+    "authors": [
+      "Jaejun Yoo",
+      "Younghoon Jung",
+      "Mikyoung Lim",
+      "Jong Chul Ye",
+      "Abdul Wahab"
+    ],
+    "publication_date": 2017,
+    "journal": "SIAM Journal on Imaging Sciences",
+    "volume": 10,
+    "issue": 3,
+    "pages": "1104-1138",
+    "publisher": "Society for Industrial and Applied Mathematics"
+  }
+]

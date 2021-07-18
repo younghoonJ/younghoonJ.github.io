@@ -1,0 +1,30 @@
+[
+  {
+    "degree": "Ph.D. Mathematical Sciences",
+    "date_start": "2014-09-01",
+    "date_finish": "2019-02-28",
+    "institute": "KAIST, Daejeon, Republic of Korea",
+    "dissertation": "Analysis and numerical computation on the transmission problem based on the geometric function theory",
+    "advisor": "Mikyoung Lim"
+  },
+  {
+    "degree": "M.S. Mathematical Sciences",
+    "date_start": "2012-09-01",
+    "date_finish": "2014-08-31",
+    "institute": "KAIST, Daejeon, Republic of Korea",
+    "thesis": "Estimating the volume fraction of an inclusion in a body from boundary measurements in two-dimensional conductivity problem",
+    "advisor": "Mikyoung Lim"
+  },
+  {
+    "degree": "B.E. Mechanical Engineering (Double Major in Mathematical Sciences)",
+    "date_start": "2008-02-01",
+    "date_finish": "2012-08-31",
+    "institute": "KAIST, Daejeon, Republic of Korea"
+  },
+  {
+    "degree": "High school diploma",
+    "date_start": "2005-03-01",
+    "date_finish": "2008-02-28",
+    "institute": "Korea Science Academy"
+  }
+]

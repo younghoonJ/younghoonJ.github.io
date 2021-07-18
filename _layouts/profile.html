@@ -1,0 +1,126 @@
+---
+layout: default
+---
+<div class="prose max-w-none divide-y">
+
+    <div>
+        <h2> Younghoon Jung (정영훈)</h2>
+        {% assign contact = site.data.contact_info %}
+        <ul class="">
+            <li>{{ contact.final_education }}</li>
+            <li>{{ contact.position }}</li>
+            <li>{{ contact.email }}</li>
+            <li>{{ contact.linkedin }}</li>
+            <li>{{ contact.homepage }}</li>
+        </ul>
+    </div>
+    <div>
+        <h3>Description</h3>
+        {{ content }}
+
+        <h3>Technical Strengths</h3>
+        <ul class="">
+            <li>Programming language and frameworks
+                <div class="px-6">
+                    Python, MATLAB, Julia, JAVA, Scala, C++, SQL,<br>
+                    Spark, PyTorch
+                </div>
+            </li>
+            <li>Mathematical Analysis
+                <div class="px-6">
+                    PDE, Inverse problems, Asymptotic analysis, Scientific computing
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <h3>Education</h3>
+        <ul class="space-y-7">
+            {% assign sorted_educations = site.data.educations | sort:"date_finish" | reverse %}
+            {% for edu in sorted_educations %}
+            <li>
+                {% if edu.degree == "High school diploma" %}
+                <div class="flex justify-between">
+                    <div class="w-5/7">{{ edu.institute }}</div>
+                    <div class="w-2/7 text-right">{{ edu.date_start | date: "%Y.%m" }} - {{ edu.date_finish | date:
+                        "%Y.%m" }}</div>
+                </div>
+                {% else %}
+                <div class="flex justify-between">
+                    <div class="w-5/7">{{ edu.degree }}</div>
+                    <div class="w-2/7 text-right">{{ edu.date_start | date: "%Y.%m" }} - {{ edu.date_finish | date:
+                        "%Y.%m" }}</div>
+                </div>
+                <div class="px-6">
+                    {{ edu.institute }}<br>
+                    {% if edu.dissertation != "" and edu.dissertation != nil %}
+                    Dissertation: {{ edu.dissertation }}<br>
+                    {% elsif edu.thesis != "" and edu.thesis != nil %}
+                    Thesis: {{ edu.thesis }}<br>
+                    {% endif %}
+                    {% if edu.advisor != "" and edu.advisor != nil %}
+                    {{ edu.advisor }}
+                    {% endif %}
+                </div>
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div>
+        <h3>Project</h3>
+        <ul class="space-y-7">
+            {% assign sorted_projects = site.data.projects | sort:"date_finish" | reverse %}
+            {% for project in sorted_projects %}
+            <li>
+                <div class="flex justify-between">
+                    <div class="w-5/7">{{project.title}}</div>
+                    {% if project.content == "Applied Mathematics research" %}
+                    <div class="w-2/7 text-right">{{ project.date_start | date: "%Y" }} - {{ project.date_finish | date:
+                        "%Y" }}</div>
+                    {% else %}
+                    <div class="w-2/7 text-right">{{ project.date_start | date: "%Y.%m" }} - {{ project.date_finish |
+                        date: "%Y.%m" }}</div>
+                    {% endif %}
+                </div>
+                {% for c in project.content %}
+                <div class="px-6">
+                    {{ c}}
+                </div>
+                {% endfor %}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div>
+        <h3>Publications</h3>
+        <ol class="space-y-7">
+            {% for journal in site.data.journals %}
+            <li>
+                <p>
+                    {{journal.title}}.<br>
+                    {{ journal.authors | join: ", " }}.<br>
+                    {{journal.journal}} {{journal.volume}}, no. {{journal.issue}} ({{journal.publication_date}}):
+                    {{journal.pages}}.<br>
+                </p>
+            </li>
+            {% endfor %}
+        </ol>
+    </div>
+
+    <div>
+        <h3>Presentations</h3>
+        <ol class="space-y-7">
+            {% for presentation in site.data.presentations %}
+            <li>
+                <p>{{presentation.title}}, {{presentation.type}}, {{presentation.site}}, {{presentation.place}}.</p>
+            </li>
+            {% endfor %}
+        </ol>
+        <hr>
+        <div class="placeholder mb-3"></div>
+    </div>
+</div>

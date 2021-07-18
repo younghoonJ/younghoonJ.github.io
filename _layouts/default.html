@@ -1,33 +1,53 @@
+---
+layout: compress
+---
+
 <!DOCTYPE html>
 <html lang="en">
 
-{% include head.html %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+        {% if page.title %}
+        {{ page.title }} — {{ page.subtitle }}
+        {% else %}
+        {{ site.title }}
+        {% endif %}
+    </title>
+    {% comment %}
+    {% if page.description %}
+    <meta name="description" content="{{ page.description }}" />
+    {% endif %}
+    {% if page.tags %}
+    <meta name="keywords" content="{{ page.tags | join: ', ' }}">
+    {% endif %}
+    {% endcomment %}
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
 
-<body>
-    <div class="body-wrapper container">
-        {% include navbar.html %}
+    <link rel="stylesheet" type="text/css" href="{{ " /assets/css/styles.css" | prepend: site.baseurl }}">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
 
-        <div class="container content-wrapper">
-            {{ content }}
+<body class="font-noto bg-fafafa">
+    <div class="px-2">
+        <header class="max-w-4xl mx-auto">
+            {% include navbar.html %}
+            {% if page.url != "/index.html" %}
+            <div class="placeholder h-16"></div>
+            {% endif %}
+        </header>
+        <div class="max-w-2xl mx-auto px-4">
+            <section>
+                {{ content }}
+            </section>
+            {% include footer.html %}
         </div>
-        {% include footer.html %}
     </div>
-    <script src="{{ "/assets/vendor/highlight/highlight.pack.js" | prepend: site.baseurl }}"></script>
-    <script src="/assets/katex/katex.min.js"></script>
-    <script src="/assets/katex/auto-render.min.js"></script>
-    <script>
-        renderMathInElement(
-            document.body,
-            {
-                delimiters: [
-                    {left: "$$", right: "$$", display: true},
-                    {left: "$", right: "$", display: false},
-                    {left: "\\(", right: "\\)", display: false},
-                    {left: "\\[", right: "\\]", display: true}]
-            }
-        );
-      </script>
-    <script>hljs.initHighlightingOnLoad();</script>
 </body>
 
 </html>

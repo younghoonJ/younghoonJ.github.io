@@ -1,0 +1,46 @@
+[
+
+    {
+        "title": "Brightics Studio",
+        "date_start": "2019-12-01",
+        "date_finish": "2020-12-31",
+        "content": ["An open-source data analysis workflow tool.", "Python, Java"]
+    },
+    {
+        "title": "RnD Cloud trace dataset",
+        "date_start": "2021-03-01",
+        "date_finish": "2021-05-31",
+        "content": ["Preparation and analysis of GPU cluster workload trace dataset."]
+    },
+    {
+        "title": "Python SQL Query Executor, Brightics AI",
+        "date_start": "2019-03-01",
+        "date_finish": "2020-12-31",
+        "content": ["Fast SQL query executor development on Python-Pandas.",  "Python, Java"]
+    },
+    {
+        "title": "Spark-function developement - Brightics A.I.",
+        "date_start": "2019-12-01",
+        "date_finish": "2020-12-31",
+        "content": ["Spark function for Brightics v3.7 development.", "Apache Spark, Scala"]
+    },
+    {
+        "title": "Guided Analytics - Brightics A.I.",
+        "date_start": "2019-03-01",
+        "date_finish": "2019-11-30",
+        "content": ["Guided Analytics (Machine Learning automation) module development of Brightics A.I.",  "Apache Spark, Scala"]
+    },
+    {
+        "title": "Gradient estimates for composites and its applications",
+        "date_start": "2016-01-01",
+        "date_finish": "2018-01-01",
+        "content": "Applied Mathematics research"
+    },
+    {
+        "title": "Asymptotics and computation of the gradient blow-up solutions",
+        "date_start": "2014-01-01",
+        "date_finish": "2016-01-01",
+        "content": "Applied Mathematics research"
+    }
+]
+

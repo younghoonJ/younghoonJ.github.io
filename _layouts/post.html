@@ -2,9 +2,12 @@
 layout: default
 ---
 
-<article class="container">
+
+
+<article class="prose max-w-none px-6">
     {% assign author = site.authors[page.author] %}
-    {% include title.html %}
+    <h1>{{ page.title }}</h1>
+    <h2>{{ page.subtitle    }}</h2>
     <div class="">
         {{author.name}} | {{page.date | date_to_string}}
     </div>
