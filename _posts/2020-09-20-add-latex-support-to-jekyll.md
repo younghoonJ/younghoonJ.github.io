@@ -53,13 +53,24 @@ kramdown:
 
 이제 css와 font를 가지고 와야 하는데 [여기](https://katex.org/docs/autorender.html)에 있는 CDN을 사용하거나 [여기](https://github.com/KaTeX/KaTeX/releases)에서 다운받아 직접 프로젝트에 포함하면 된다. 나는 `/assets/katex` 라는 디렉터리를 만들고 그곳에 `/fonts`와 katex.min.css를 복사했다.
 
-마지막으로 Latex 렌더링이 필요한 페이지의 `<head>`부분에 css를 추가하면 된다.
+마지막으로 Latex 렌더링이 필요한 페이지의 `<head>`부분에 css와 js를 추가하자. 페이지 로딩 속도를 위해 js는 body 끝에 포함시켜도 된다.
 ```html
 <head>
-    ...
   <link rel="stylesheet" href="/assets/katex/katex.min.css">
+  <script src="/assets/katex.min.js"></script>
+  <script src="/contrib/auto-render.min.js"></script>
+  <script type="text/javascript">
+        renderMathInElement(document.body, {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "\\[", right: "\\]", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false }]
+        });
+    </script>
 </head>
 ```
+
 좀 더 섬세하게 page의 `frontmatter`에 hasmath flag를 설정하고 `if-else` 방식으로 추가해서 page 별로 css를 추가할지 말지 결정할 수 있다.
 
 시험삼아 아래의 Euler formula를 작성해 보면

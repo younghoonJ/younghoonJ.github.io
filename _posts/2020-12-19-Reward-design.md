@@ -23,13 +23,13 @@ $$G_t := R_t + R_{t+1} + R_{t+2} + \cdots + R_{T}$$
 
 이 설계에는 몇가지 문제점이 있다.
 1. **시간의 문제**: return이 $0$ 또는 $1$인 경우 에피소드가 무한히 계속되면 agent의 행동이 optimal인지 여부에 상관없이 항상 누석 보상이 무한대이다.
-1. **Positive feedback loop**: 오랜 기간 행동 후 $100$ / 순간의 행동에 대해서 $1$로 return이 주어지는 경우 agent는 $1$을 얻는 행동만 계속 반복해서 유한한 에피소드 내에서 보상을 최대화 할 수 있다.
+1. **Positive feedback loop**: 오랜 기간 행동 후 $100$ 만큼, 순간의 행동에 대해서 $1$로 return이 주어지는 경우 agent는 $1$을 얻는 행동만 계속 반복해서 유한한 에피소드 내에서 보상을 최대화 할 수 있다.
 
 시간의 문제에 대해서는 **Reward discounting**으로 대응할 수 있다. 합이 infinite으로 발산하는 것은 discounting factor $0 <\gamma <1$을 geometric하게 곱해서 수렴하도록 만들 수 있다. 즉, 누적 보상은 다음과 같다:
 
 $$G_t= R_t + \gamma R_{t+1} +\gamma^2 R_{t+2} + \cdots = \sum_{k=0}^{\infty}\gamma^k R_{t+k}.$$
 
-만약 reward가 모든 시간 $t$에 대해서 bounded라면, 즉, $|R_t|\leq M$ 이라면
+만약 reward가 모든 시간 $t$에 대해서 bounded라면, 즉, $ \|R_t\| \leq M $ 이라면
 
 $$|G_t|\leq M\frac{1}{1-\gamma}$$
 
@@ -46,7 +46,7 @@ $$|G_t|\leq M\frac{1}{1-\gamma}$$
 
 - **Reward scaling**: nonzero constant로 나누는 것은 괜찮다.
 
-- **Reward Shaping**: MDP의 모든 rewards $$R(s,a,s')$$에 optimal policy를 변화시키지 않고 **potential-based shaping function** $F(s,a,s')$을 더할 수 있다. 여기서,
+- **Reward Shaping**: MDP의 모든 rewards $R(s,a,s')$에 optimal policy를 변화시키지 않고 **potential-based shaping function** $F(s,a,s')$을 더할 수 있다. 여기서,
 
 $$F(s,a,s') = \gamma \Psi(s') - \Psi(s)$$
 
