@@ -2,14 +2,15 @@
 layout: default
 ---
 
-
-
 <article class="prose max-w-none px-6">
-    {% assign author = site.authors[page.author] %}
-    <h1>{{ page.title }}</h1>
-    <h2>{{ page.subtitle    }}</h2>
-    <div class="">
-        {{author.name}} | {{page.date | date_to_string}}
+    {% assign author = site.author %}
+    <div class="text-4xl py-6">{{ page.title }}</div>
+    {% if page.subtitle != nil %}
+    <h2>{{ page.subtitle }}</h2>
+    {% endif %}
+    <div>
+        <span>By. {{author.name}}</span><br>
+        <span>{{page.date | date_to_string}}</span>
     </div>
     <hr/>
     {{ content }}

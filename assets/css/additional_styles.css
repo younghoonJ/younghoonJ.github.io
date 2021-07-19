@@ -8,3 +8,8 @@
   text-transform: capitalize !important;
   font-size: 2rem;
 }
+.dot{
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+}

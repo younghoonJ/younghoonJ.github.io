@@ -36,14 +36,7 @@ layout: compress
 </head>
 
 <body class="font-roboslab bg-fafafa">
-    {% if page.url != "/" %}
-    <div class="px-2">
-        <header class="max-w-4xl mx-auto">
-            {% include navbar.html %}
-            <div class="placeholder h-16"></div>
-        </header>
-    </div>
-    {% endif %}
+    {% if page.url == "/" %}
     <div class="flex h-screen">
         <div class="max-w-2xl m-auto px-4">
             <section>
@@ -52,6 +45,25 @@ layout: compress
             {% include footer.html %}
         </div>
     </div>
+    {% else %}
+    <div class="px-2">
+        <header class="max-w-4xl mx-auto">
+            {% include navbar.html %}
+            <div class="placeholder h-16"></div>
+        </header>
+    </div>
+    <div class="flex h-screen">
+        <div class="max-w-2xl m-auto px-4">
+            <section>
+                {{ content }}
+            </section>
+            <div class="placeholder h-12"></div>
+            <hr>
+            <div class="placeholder h-7"></div>
+            {% include footer.html %}
+        </div>
+    </div>
+    {% endif %}
 
     <script src="{{ " /assets/vendor/prism/prism.js" | prepend: site.baseurl }}"></script>
     <script src="{{ " /assets/vendor/katex/katex.min.js" | prepend: site.baseurl }}"></script>

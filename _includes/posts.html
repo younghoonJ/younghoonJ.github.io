@@ -1,35 +1,45 @@
-<div class="mx-6 my-3">
+<div class="mx-2 my-3">
     {% if site.posts.size == 0 %}
-        <h2>No post found!</h2>
+    <h2>No post found!</h2>
     {% else %}
-        {% for post in site.posts %}
-        <a href="{{ site.baseurl }}{{ post.url }}">
-            <!-- <div class="flex items-center justify-start border-2 border-blue-200 shadow-md
-            my-4 p-3 rounded-md"> -->
-            <div class="flex items-center justify-start shadow my-4 p-3 rounded-sm">
-                    <div class="w-20 h-20 text-gray-900 text-2xl font-extrabold rounded-md flex items-center justify-center shadow-inner m-2">
-                    <svg class="h-8/12 w-8/12 mr-1 text-blue-300" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path d="M12 14l9-5-9-5-9 5 9 5z" />
-                        <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
-                    </svg>
-                </div>
-                <div class="mx-3 flex flex-col">
-                    <div class="text-xl text-gray-900">
-                        <h2>{{ post.title }}</h2>
+    {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
+    <div>
+        {% for year in postsByYear %}
+        <div>
+            <span class="text-2xl">
+                {{ year.name }}
+            </span>
+        </div>
+        <div>
+            {% for post in year.items %}
+            <div class="relative px-1 rounded-lg">
+                <a href="{{ site.baseurl }}{{ post.url }}">
+                    <div class="flex">
+                        <div class="w-1/12 flex justify-center items-center">
+                            <div class="absolute h-full border-2 border-gray-200"></div>
+                            <div class="rounded-full bg-gray-200 dot"></div>
+                        </div>
+                        <div
+                            class="w-11/12 bg-gray-50 my-2 shadow-md rounded-md p-2 transform transition duration-300 hover:scale-110 hover:bg-white hover:absolute z-10">
+                            <div class="flex flex-col">
+                                <span class="text-sm"><time>{{ post.date | date: "%b/%d/%Y" }}</time></span>
+                                <span class="text-xl text-gray-900">
+                                    {{ post.title }}
+                                </span>
+                                <span class="text-xs">
+                                    By {{ post.author }}
+                                </span>
+                                <span class="text-base text-gray-500">
+                                    {{ post.description }}
+                                </span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="text-lg text-gray-500">
-                        <span class="list-post-description">
-                            {{ post.description }}
-                        </span>
-                    </div>
-                    <div class="text-base">
-                        <small>By <span>{{ post.author }}</span></small>
-                        <small><time>{{ post.date | date_to_string }}</time></small>
-                    </div>
-                </div>
+                </a>
             </div>
-        </a>
+            {% endfor %}
+        </div>
         {% endfor %}
+    </div>
     {% endif %}
 </div>

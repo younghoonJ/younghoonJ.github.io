@@ -3,7 +3,7 @@ const plugin = require("tailwindcss/plugin")
 
 module.exports = {
   purge: {
-    enabled: true,
+    // enabled: true,
     content: [
       "./_includes/**/*.html",
       "./_layouts/**/*.html",
