@@ -23,7 +23,8 @@ module.exports = {
         fafafa: "#fafafa"
       },
       fontFamily: {
-        "noto": ["noto-sans"]
+        // "notosans": ["noto-sans"],
+        "roboslab": ["Roboto Slab"]
       },
       width: {
         "1/7": "14.2857143%",
