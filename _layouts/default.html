@@ -37,22 +37,23 @@ layout: compress
 </head>
 
 <body class="font-noto bg-fafafa">
+    {% if page.url != "/" %}
     <div class="px-2">
         <header class="max-w-4xl mx-auto">
             {% include navbar.html %}
-            {% if page.url != "/index.html" %}
             <div class="placeholder h-16"></div>
-            {% endif %}
         </header>
     </div>
+    {% endif %}
+    <div class="flex h-screen">
+        <div class="max-w-2xl m-auto px-4">
+            <section>
+                {{ content }}
+            </section>
+            {% include footer.html %}
+        </div>
+    </div>
 
-    <div class="max-w-2xl mx-auto px-4">
-        <section>
-            {{ content }}
-        </section>
-        {% include footer.html %}
-    </div>
-    </div>
     <script src="{{ " /assets/vendor/prism/prism.js" | prepend: site.baseurl }}"></script>
     <script src="{{ " /assets/vendor/katex/katex.min.js" | prepend: site.baseurl }}"></script>
     <script src="{{ " /assets/vendor/katex/contrib/auto-render.min.js" | prepend: site.baseurl }}"></script>

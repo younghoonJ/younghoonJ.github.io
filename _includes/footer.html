@@ -25,20 +25,25 @@
                 </a>
                 <a href="https://scholar.google.com/citations?user={{ author.scholar }}" class="mx-3">
                     <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path fill="currentColor" 
-                        d="M201.5 16.25l-160.5 141h103.5c7.5 67.5 61.5 96 117 100.5-10.5 27-6 40.5 10.5 58.5-64.5 1.5-154.5 39-154.5 100.5 6 67.5 94.5 81 138 81 57 1.5 121.5-28.5 135-81 6-52.5-15-81-46.5-106.5-34.5-27-42-42-31.5-60 22.5-25.5 52.5-40.5 58.5-76.5 3-25.5-3-42-9-64.5l67.5-57-1.5 24c-4.5 3-7.5 9-7.5 13.5v154.5c3 19.5 33 16.5 34.5 0V89.75c0-4.5-3-10.5-7.5-12v-37.5l24-24zm87 211.5c-91.5 15-130.5-130.5-57-148.5 84-16.5 124.5 129 57 148.5zm-7.5 109.5c90 19.5 91.5 94.5 15 117-66 13.5-123-6-121.5-45 0-37.5 52.5-72 106.5-72z"/>
-                        </svg>
+                        <path fill="currentColor"
+                            d="M201.5 16.25l-160.5 141h103.5c7.5 67.5 61.5 96 117 100.5-10.5 27-6 40.5 10.5 58.5-64.5 1.5-154.5 39-154.5 100.5 6 67.5 94.5 81 138 81 57 1.5 121.5-28.5 135-81 6-52.5-15-81-46.5-106.5-34.5-27-42-42-31.5-60 22.5-25.5 52.5-40.5 58.5-76.5 3-25.5-3-42-9-64.5l67.5-57-1.5 24c-4.5 3-7.5 9-7.5 13.5v154.5c3 19.5 33 16.5 34.5 0V89.75c0-4.5-3-10.5-7.5-12v-37.5l24-24zm87 211.5c-91.5 15-130.5-130.5-57-148.5 84-16.5 124.5 129 57 148.5zm-7.5 109.5c90 19.5 91.5 94.5 15 117-66 13.5-123-6-121.5-45 0-37.5 52.5-72 106.5-72z" />
+                    </svg>
                 </a>
             </div>
             <div class="placeholder"></div>
         </div>
+        {% if page.url == "/" %}
+        <div class="text-lg flex justify-center">
+            <a href="{{ '/profile.html' | prepend: site.baseurl }}" class="py-4 px-5">ABOUT</a>
+            <a href="{{ '/archive.html' | prepend: site.baseurl }}" class="py-4 px-5">POSTS</a>
+            <a href="{{ '/assets/cv_Jungyounghoon.pdf' | prepend: site.baseurl }}" class="py-4 px-5">CV</a>
+        </div>
+        {% endif %}
         <div class="text-bluegray text-xs pb-5 pt-10">
             <div class="flex justify-center items-center w-full">
                 &#169;&nbsp;2021&nbsp;
                 <a href="/" rel="copyright">{{ site.title }}. </a>&nbsp;All Rights Reserved.
             </div>
         </div>
-    </div>
-    </div>
     </div>
 </footer>
