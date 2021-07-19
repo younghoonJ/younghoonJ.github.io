@@ -36,11 +36,13 @@ $$\tag{1} Ax = y$$
 
 - 어떤 행렬 $$A\in \mathbb{C}^{m\times N}$$의 경우에 sparsity가정으로 문제를 풀어도 괜찮을까? 어떻게 행렬 $$A$$를 선택해야 할까?
 
-좀 극단적으로 (1)에서 행렬 $$A$$가
+좀 극단적으로 (1)에서 행렬 $A$가
+
 $$A = \begin{bmatrix}
 1 & 0 & 0\\
 0 & 1 & 0
 \end{bmatrix}$$
+
 인 경우 $$x$$의 세번째 성분은 무슨 방법을 써도 복원할 수 없다. 그래서 sparsity 가정으로 문제를 풀기 위해서는 measurement matrix $$A$$가 적절하게 선택되도록 시스템을 설계해야 한다.
 
 이제 적절한 시스템 디자인을 통해 행렬 $$A$$를 얻었다면 그 다음은 어떻게 풀지의 문제가 남는다. 알고리듬이 느리면 이론이 아무리 아름다워도 가치가 없다. 그래서 다음의 질문도 중요하다.
@@ -58,7 +60,7 @@ $$ min \| x \|_0~~\textrm{subject to}~~Ax=y$$
 
 Compressive sensing은 많은 signal이 sparse 하게 근사할 수 있다는 관찰로부터 시작되었다고 할 수 있다. 이런 관점에서 Compressive sensing은 **Sparse Approximation**의 하위 주제라고 생각할 수 있다. 하지만 Compressive sensing이 완전히 Sparse Approximation인 것은 아니며 이 둘은 보는 관점에는 차이가 있다.
 
-우선 Sparse Approximation에서 무엇을 하는지 살펴보자. 어떤 signal $$y\in\mathbb{C}^m$$을 정해진 벡터 $$a_1,...a_N\in\mathbb{C}^m$$, $$span{a_1,...a_N} = \mathbb{C}^m$$의 linear combination으로 나타낼 수 있다고 가정하자. 이 벡터의 dictionary는 linear dependent해도 됩니다. 이제 $$a_1,...a_N$$를 columns로 가지는 $$A\in\mathbb{C}^{m \times N}$$ 생각하고 $$y$$의 sparsest representation을 찾는 다음의 문제를 생각해 보자.
+우선 Sparse Approximation에서 무엇을 하는지 살펴보자. 어떤 signal $$y\in\mathbb{C}^m$$을 정해진 벡터 $$a_1,...a_N\in\mathbb{C}^m$$, $$span\{a_1,...a_N\} = \mathbb{C}^m$$의 linear combination으로 나타낼 수 있다고 가정하자. 이 벡터의 dictionary는 linear dependent해도 됩니다. 이제 $$a_1,...a_N$$를 columns로 가지는 $$A\in\mathbb{C}^{m \times N}$$ 생각하고 $$y$$의 sparsest representation을 찾는 다음의 문제를 생각해 보자.
 
 $$\min\| x \|_0~~\textrm{subject to}~~Ax = y.$$
 
