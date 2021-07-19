@@ -26,7 +26,7 @@ Katex를 사용하면 Jekyll 빌드 시에 js까지 빌드해서 LaTex markup을
   - Ruby gem duktape,
   - Node.js
 
-우선 js가 필요한데 고민하지 말고 [Node.js (https://nodejs.org)](https://nodejs.org)를 설치하자. 그리고 `gem install`을 하자. 해보면 `kramdown-math-katex`만 설치해도 나머지 gem도 같이 설치된다.
+우선 js가 필요한데 고민하지 말고 [Node.js (https://nodejs.org)](https://nodejs.org)를 설치하자. 그리고 **gem install**을 하자. 해보면 **kramdown-math-katex**만 설치해도 나머지 gem도 같이 설치된다.
 
 ```powershell
 PS D:\> gem install kramdown-math-katex
@@ -51,9 +51,9 @@ kramdown:
   math_engine: katex
 ```
 
-이제 css와 font를 가지고 와야 하는데 [여기](https://katex.org/docs/autorender.html)에 있는 CDN을 사용하거나 [여기](https://github.com/KaTeX/KaTeX/releases)에서 다운받아 직접 프로젝트에 포함하면 된다. 나는 `/assets/katex` 라는 디렉터리를 만들고 그곳에 `/fonts`와 katex.min.css를 복사했다.
+이제 css와 font를 가지고 와야 하는데 [여기](https://katex.org/docs/autorender.html)에 있는 CDN을 사용하거나 [여기](https://github.com/KaTeX/KaTeX/releases)에서 다운받아 직접 프로젝트에 포함하면 된다. 나는 **/assets/katex** 라는 디렉터리를 만들고 그곳에 **/fonts**와 **katex.min.css**를 복사했다.
 
-마지막으로 Latex 렌더링이 필요한 페이지의 `<head>`부분에 css와 js를 추가하자. 페이지 로딩 속도를 위해 js는 body 끝에 포함시켜도 된다.
+마지막으로 Latex 렌더링이 필요한 페이지의 **<head>**부분에 css와 js를 추가하자. 페이지 로딩 속도를 위해 js는 body 끝에 포함시켜도 된다.
 ```html
 <head>
   <link rel="stylesheet" href="/assets/katex/katex.min.css">
@@ -71,7 +71,7 @@ kramdown:
 </head>
 ```
 
-좀 더 섬세하게 page의 `frontmatter`에 hasmath flag를 설정하고 `if-else` 방식으로 추가해서 page 별로 css를 추가할지 말지 결정할 수 있다.
+좀 더 섬세하게 page의 **frontmatter**에 hasmath flag를 설정하고 **if-else** 방식으로 추가해서 page 별로 css를 추가할지 말지 결정할 수 있다.
 
 시험삼아 아래의 Euler formula를 작성해 보면
 ```latex
@@ -81,7 +81,7 @@ $$e^{i\theta} = \cos{\theta} + i\sin{\theta}$$
 
 $$e^{i\theta} = \cos{\theta} + i\sin{\theta}$$
 
-그런데 mobile화면에서는 수식이 수평으로 화면을 벗어나기 때문에 따로 css로 처리를 해 주어야 한다. 이때 `overflow-x`를 사용하면 브라우저의 기본 세팅 때문에 수직 스크롤이 같이 생기는 경우가 있다. 이런 경우는 padding을 적당히 추가해서 수직 스크롤을 제거하자.
+그런데 mobile화면에서는 수식이 수평으로 화면을 벗어나기 때문에 따로 css로 처리를 해 주어야 한다. 이때 **overflow-x**를 사용하면 브라우저의 기본 세팅 때문에 수직 스크롤이 같이 생기는 경우가 있다. 이런 경우는 padding을 적당히 추가해서 수직 스크롤을 제거하자.
 
 
 ```css

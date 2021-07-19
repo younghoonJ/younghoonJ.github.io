@@ -9,11 +9,11 @@ hasmath: true
 ---
 
 
-우리는 t-test로 두 그룹 A, B의 mean이 유의미한 차이가 있는지 확인할 수 있다. 그런데 만약 그룹이 셋 이상이라면 어떻게 해야 할까? 이런 경우에는 `One-way ANOVA`를 이용할 수 있다.
+우리는 t-test로 두 그룹 A, B의 mean이 유의미한 차이가 있는지 확인할 수 있다. 그런데 만약 그룹이 셋 이상이라면 어떻게 해야 할까? 이런 경우에는 **One-way ANOVA**를 이용할 수 있다.
 
 <!--more-->
 
-Analysis of variance (ANOVA)는 `the law of total variance`를 이용해서 그룹 간에 통계적 차이가 존재하는지 추정하는 방법이다. 그중에서도 간단한 형태인 onw-way ANOVA는 여러 집단이 존재할 때 이들의 평균 $$\mu_0, \mu_1,...\mu_n$$에 유의미한 차이가 있는지 판단하는 방법이다.
+Analysis of variance (ANOVA)는 **the law of total variance**를 이용해서 그룹 간에 통계적 차이가 존재하는지 추정하는 방법이다. 그중에서도 간단한 형태인 onw-way ANOVA는 여러 집단이 존재할 때 이들의 평균 $$\mu_0, \mu_1,...\mu_n$$에 유의미한 차이가 있는지 판단하는 방법이다.
 
 예를 들어 Group A, B, C가 있을 때 null hypothesis와 alternative hypothesis는 다음과 같습니다.
 
@@ -21,7 +21,7 @@ $$H_0: \mu_1 =  \mu_2 = \mu_3$$
 
 $$H_1: \mu_i \neq \mu_j \textrm{ for some } 1 \leq i \neq j \leq 3$$
 
-이제 가설을 검증하기 위해서 variance를 이용한다. `the law of total variance`에 따르면 variance의 총합은 다음과 같이 나눌 수 있다.
+이제 가설을 검증하기 위해서 variance를 이용한다. **the law of total variance**에 따르면 variance의 총합은 다음과 같이 나눌 수 있다.
 
 $$\textrm{The total variation of all the scores} = \textrm{the variance within each group}\\ + \textrm{the variation between the groups}$$
 

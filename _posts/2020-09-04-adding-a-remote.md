@@ -8,7 +8,7 @@ description: Explains git remote command.
 hascode: true
 ---
 
-git에 github 같은 원격 저장소를 추가하려면 `git remote` 명령어를 사용하면 된다. `git remote add` 옵션 이용해 새로운 remote를 추가할 수 있고 add 명령은 Remote name과 Remote URL이라는 두 인자를 가진다.
+git에 github 같은 원격 저장소를 추가하려면 **git remote** 명령어를 사용하면 된다. **git remote add** 옵션 이용해 새로운 remote를 추가할 수 있고 add 명령은 Remote name과 Remote URL이라는 두 인자를 가진다.
 
 <!--more-->
 
@@ -33,7 +33,7 @@ fatal: remote origin already exists
 - 존재하는 remote의 이름을 변경하거나
 - 존재하는 remote의 이름을 지우면 된다.
 
-추가적인 옵션은 `git remote -help`를 통해 확인 가능하다.
+추가적인 옵션은 **git remote -help**를 통해 확인 가능하다.
 
 ```powershell
 PS D:\Liquid\Liquid> git remote -help

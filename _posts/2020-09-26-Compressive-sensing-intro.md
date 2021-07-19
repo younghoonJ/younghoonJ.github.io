@@ -26,9 +26,9 @@ $$\tag{1} Ax = y$$
 
 이번에는 유일한 해를 구할 필요가 있는지 생각해 보자. 만약 우리가 문제를 풀어 얻은 답 $$x$$보다는 관련된 양 $$F(x)$$에 관심이 있는 경우는 어떨까? 이때, $$x$$대신 다른 $$x'$$을 사용한 $$F(x')$$의 효과가 $$F(x)$$와 비슷하다면 그냥 비슷한 효과를 주는 $$x'$$를 아무렇게나 선택해서 사용해도 무방하다.
 
-결국 측정한 정보의 양 $$m$$이 작아서 (1)이 무수히 많은 해를 가지더라도 우리가 좋은 기준에 따라 해를 선택하고 이를 통해서 우리의 목표를 달성한다면 충분하다. 이제 남은 문제는 `어떤 기준이 좋은 기준인가?` 이다.
+결국 측정한 정보의 양 $$m$$이 작아서 (1)이 무수히 많은 해를 가지더라도 우리가 좋은 기준에 따라 해를 선택하고 이를 통해서 우리의 목표를 달성한다면 충분하다. 이제 남은 문제는 **어떤 기준이 좋은 기준인가?** 이다.
 
-이 방면으로 발전된 분야가 `compressive sensing`, `compressed sensing`, `sparse sensing`, `sparse recovery` 등 여러 이름으로 불리는 분야이다. 이름에서 알 수 있듯이 해를 선택하는 기준이 되는 것이 바로 signal $$x$$의 `sparsity` 가정이다. 
+이 방면으로 발전된 분야가 **compressive sensing**, **compressed sensing**, **sparse sensing**, **sparse recovery** 등 여러 이름으로 불리는 분야이다. 이름에서 알 수 있듯이 해를 선택하는 기준이 되는 것이 바로 signal $$x$$의 **sparsity** 가정이다. 
 
 사실 sparsity 조건은 별것 아닌데, signal의 성분 중 많은 부분이 $$0$$ 이면 signal을 sparse 하다고 부른다. 예를 들어 음악 같은 sound signal을 Fourier transform을 통해 frequency 별로 분해해서 저장할 수 있다. 이때 인간이 들을 수 없는 초음파 영역에 해당하는 coefficient를 전부 0으로 만들어도 별문제가 없다. 또 그림 파일을 discrete cosine basis로 나타낸 다음 가장 큰 coefficients만 저장하는 경우도 sparsity를 이용하는 방법이다.
 
@@ -51,12 +51,12 @@ sparsity의 의미에 따라 생각해 보면 당연히 $$l_0$$ optimization을 
 
 $$ min \| x \|_0~~\textrm{subject to}~~Ax=y$$
 
-안타깝게도 위 문제는 일반적으로 `NP-hard` 라서 이런걸 풀려고 시도하면 은퇴할 때까지도 컴퓨터가 결과를 리턴하지 않을 수 있다. 그래서 convex-relaxation, greedy-type method를, threshoding method등 다른 방법을 이용해야 한다. 어떤 알고리듬을 선택하더라도 사용하는 인간이 열심히 하면 잘 풀릴 거야 아마.
+안타깝게도 위 문제는 일반적으로 **NP-hard** 라서 이런걸 풀려고 시도하면 은퇴할 때까지도 컴퓨터가 결과를 리턴하지 않을 수 있다. 그래서 convex-relaxation, greedy-type method를, threshoding method등 다른 방법을 이용해야 한다. 어떤 알고리듬을 선택하더라도 사용하는 인간이 열심히 하면 잘 풀릴 거야 아마.
 
 
 ## Sparse Approximation
 
-Compressive sensing은 많은 signal이 sparse 하게 근사할 수 있다는 관찰로부터 시작되었다고 할 수 있다. 이런 관점에서 Compressive sensing은 `Sparse Approximation`의 하위 주제라고 생각할 수 있다. 하지만 Compressive sensing이 완전히 Sparse Approximation인 것은 아니며 이 둘은 보는 관점에는 차이가 있다.
+Compressive sensing은 많은 signal이 sparse 하게 근사할 수 있다는 관찰로부터 시작되었다고 할 수 있다. 이런 관점에서 Compressive sensing은 **Sparse Approximation**의 하위 주제라고 생각할 수 있다. 하지만 Compressive sensing이 완전히 Sparse Approximation인 것은 아니며 이 둘은 보는 관점에는 차이가 있다.
 
 우선 Sparse Approximation에서 무엇을 하는지 살펴보자. 어떤 signal $$y\in\mathbb{C}^m$$을 정해진 벡터 $$a_1,...a_N\in\mathbb{C}^m$$, $$span{a_1,...a_N} = \mathbb{C}^m$$의 linear combination으로 나타낼 수 있다고 가정하자. 이 벡터의 dictionary는 linear dependent해도 됩니다. 이제 $$a_1,...a_N$$를 columns로 가지는 $$A\in\mathbb{C}^{m \times N}$$ 생각하고 $$y$$의 sparsest representation을 찾는 다음의 문제를 생각해 보자.
 
@@ -88,7 +88,7 @@ $$A_{j,k} = \phi_k(x_j)$$
 
 $$y = Ax +e$$
 
-이고 $$x$$는 sparse 하다는 가정을 한다. 이때 우리는 x의 어떤 성분이 중요한지 알지 못한다. 기계학습에서는 학습에 중요한 인자를 결정하는 과정을  `feature selection`이라고 부르는데, 여기에서는 문제를 풀면서 이 과정이 자연스럽게 수행된다. 문제를 푸는데 주로 사용되는 테크닉으로는 LASSO(least absolute shrinkage and selection operator)라 불리는 $$l_1$$-regularized least square problem가 있다.
+이고 $$x$$는 sparse 하다는 가정을 한다. 이때 우리는 x의 어떤 성분이 중요한지 알지 못한다. 기계학습에서는 학습에 중요한 인자를 결정하는 과정을 **feature selection**이라고 부르는데, 여기에서는 문제를 풀면서 이 과정이 자연스럽게 수행된다. 문제를 푸는데 주로 사용되는 테크닉으로는 LASSO(least absolute shrinkage and selection operator)라 불리는 $$l_1$$-regularized least square problem가 있다.
 
 $$min \| Ax-y \|_2^2~~\textrm{subject to}~~\| x \|_1\leq t$$
 

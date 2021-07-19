@@ -3,3 +3,8 @@
     padding-top: 0.6rem !important;
     padding-bottom: 0.6rem !important;
   }
+
+.strong-first::first-letter{
+  text-transform: capitalize !important;
+  font-size: 2rem;
+}

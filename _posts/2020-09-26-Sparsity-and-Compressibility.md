@@ -8,7 +8,7 @@ description: What is compressive sensing?
 hasmath: true
 ---
 
-Vector의 `sparsity`와 `compressibility`는 어떻게 이야기해야 할까? 
+Vector의 **sparsity**와 **compressibility**는 어떻게 이야기해야 할까? 
 
 <!--more-->
 # Notations
@@ -24,7 +24,7 @@ $$card(S) = \textrm{the cardinality of a set } S$$
 
 $$supp(x) := \{j\in[N] | x_j \neq 0\}.$$
 
-그리고 벡터 $$x\in\mathbb{C}^N$$가 아래의 조건을 만족하면 `s-sparse` 하다라고 정의한다.
+그리고 벡터 $$x\in\mathbb{C}^N$$가 아래의 조건을 만족하면 **s-sparse** 하다라고 정의한다.
 
 $$\| x \|_0 := card(supp(x)) \leq s.$$
 
@@ -37,7 +37,7 @@ $$\|x\|_p^p = \sum_{j=1}^N |x_j|^p \rightarrow \sum_{j=1}^{N}\chi_{\{x_j\neq 0\}
 Sparsity는 너무 강한 조건이고 해석학적으로 다루기 힘들기 때문에 relaxation으로써 더 약한 조건인 Compressibility 개념이 필요하다.
 
 ## $$s$$-term approximation
-먼저 벡터 $$x$$의 compression을 최대 s개를 제외한 나머지 성분을 0으로 만드는 것으로 생각할 수 있다. 이렇게 얻어진 벡터를 s-term approximation of $$x$$ ($$s \ll N$$)라고 부른다. 이 경우 벡터가 얼마나 잘 근사되었는 지를 다음과 같이 정의되는 `error of best s-term approximation`으로 측정할 수 있다.
+먼저 벡터 $$x$$의 compression을 최대 s개를 제외한 나머지 성분을 0으로 만드는 것으로 생각할 수 있다. 이렇게 얻어진 벡터를 s-term approximation of $$x$$ ($$s \ll N$$)라고 부른다. 이 경우 벡터가 얼마나 잘 근사되었는 지를 다음과 같이 정의되는 **error of best s-term approximation**으로 측정할 수 있다.
 
 For $$p>0$$, the $$l_p$$-error of best s-term approximation to a vector $$x\in\mathbb{C}^N$$ is
 
