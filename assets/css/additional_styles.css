@@ -1,0 +1,5 @@
+.katex-display {
+    overflow-x: auto !important;
+    padding-top: 0.6rem !important;
+    padding-bottom: 0.6rem !important;
+  }

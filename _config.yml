@@ -16,6 +16,10 @@ plugins:
   - jekyll-feed
   - jekyll-postcss
 
+markdown: kramdown
+kramdown:
+  math_engine: katex
+
 
 exclude:
   - .sass-cache/
