@@ -37,7 +37,8 @@ layout: compress
 
 </head>
 
-<body class="font-roboslab bg-fafafa">
+
+<body class="font-roboslab">
     {% if page.url == "/" %}
     <div class="flex h-screen">
         <div class="max-w-2xl m-auto px-4">
@@ -59,7 +60,6 @@ layout: compress
             {{ content }}
         </section>
         <div class="placeholder h-12"></div>
-        <hr>
         <div class="placeholder h-7"></div>
         {% include footer.html %}
     </div>
