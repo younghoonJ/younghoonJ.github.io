@@ -5,7 +5,7 @@ title: Global optimality
 tags: [Reinforcement Learning, Dynamic programming]
 category: Reinforcement Learning
 description: 
-hasmath: true
+latex: true
 ---
 
 

@@ -5,7 +5,7 @@ title: Sparsity and Compressibility
 tags: [compressive sensing, sparsity, compressibility]
 category: Mathematics
 description: What is compressive sensing?
-hasmath: true
+latex: true
 ---
 
 Vector의 **sparsity**와 **compressibility**는 어떻게 이야기해야 할까? 

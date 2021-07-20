@@ -5,7 +5,7 @@ title: Add LaTeX support to Jekyll site
 tags: [latex, katex, math, equation, github pages, Jekyll]
 description: Integrating KaTex with Jekyll site.
 category: Programming
-hasmath: true
+latex: true
 hascode: true
 ---
 

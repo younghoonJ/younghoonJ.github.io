@@ -5,7 +5,7 @@ title: Reward design
 tags: [Reinforcement Learning]
 category: Reinforcement Learning
 description: Explains reward design in Reinforcement Learning.
-hasmath: true
+latex: true
 ---
 
 

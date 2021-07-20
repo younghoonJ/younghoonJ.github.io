@@ -5,7 +5,7 @@ title: One-way ANOVA
 tags: [ANOVA, one-way ANOVA, hypothesis testing, statistics]
 category: Mathematics
 description: Explains one-way ANOVA.
-hasmath: true
+latex: true
 ---
 
 

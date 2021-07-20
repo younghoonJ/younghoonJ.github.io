@@ -5,7 +5,7 @@ title: Compressive sensing - intro
 tags: [compressive sensing, compressed sensing, sparse recovery, sparse solution, approximate solution, machine learning, LASSO]
 category: Mathematics
 description: What is compressive sensing?
-hasmath: true
+latex: true
 ---
 
 우리가 문제를 풀기 위해서는 문제를 푸는데 필요한 충분한 양의 정보를 가지고 있어야 한다. 하지만 정보가 부족하다면 어떻게 해야 할까?

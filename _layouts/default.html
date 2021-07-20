@@ -30,9 +30,15 @@ layout: compress
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;500;700&display=swap"
         rel="stylesheet">
+    {% comment %}
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    {% endcomment %}
+    {% if page.latex %}
     <link rel="stylesheet" href="{{ " /assets/vendor/katex/katex.min.css" | prepend: site.baseurl }}">
+    {% endif %}
+    {% if page.hascode %}
     <link rel="stylesheet" href="{{ " /assets/vendor/prism/prism.css" | prepend: site.baseurl }}">
+    {% endif %}
     <link rel="stylesheet" type="text/css" href="{{ " /assets/css/styles.css" | prepend: site.baseurl }}">
 
 </head>
@@ -63,10 +69,13 @@ layout: compress
         {% include footer.html %}
     </div>
     {% endif %}
-
+    {% if page.hascode %}
     <script src="{{ " /assets/vendor/prism/prism.js" | prepend: site.baseurl }}"></script>
+    {% endif %}
+    {% if page.latex %}
     <script src="{{ " /assets/vendor/katex/katex.min.js" | prepend: site.baseurl }}"></script>
     <script src="{{ " /assets/vendor/katex/contrib/auto-render.min.js" | prepend: site.baseurl }}"></script>
+    {% endif %}
     <script type="text/javascript">
         renderMathInElement(document.body, {
             delimiters: [
