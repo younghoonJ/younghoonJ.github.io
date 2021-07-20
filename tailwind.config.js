@@ -3,7 +3,7 @@ const plugin = require("tailwindcss/plugin")
 
 module.exports = {
   purge: {
-    // enabled: true,
+    enabled: true,
     content: [
       "./_includes/**/*.html",
       "./_layouts/**/*.html",
@@ -20,7 +20,8 @@ module.exports = {
         teal: colors.emerald,
         rose: colors.rose,
         bluegray: "#141821",
-        fafafa: "#fafafa"
+        fafafa: "#fafafa",
+        browngray: "#39393d"
       },
       fontFamily: {
         // "notosans": ["noto-sans"],
