@@ -4,7 +4,7 @@
         <div class="">
             <div class="flex justify-center space-x-5 text-bluegray pt-4 pb-2">
                 <div
-                    class="w-14 h-14 flex justify-center items-center border-1 rounded group transform transition duration-100 group-hover:shadow-lg hover:scale-110">
+                    class="animate1 w-14 h-14 flex justify-center items-center border-1 rounded group transform transition duration-100 group-hover:shadow-lg hover:scale-110">
                     <a href="mailto:{{ author.email }}" class="mx-3">
                         <svg class="h-6 w-6 transform group-hover:text-yellow-500" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 448 512">
@@ -15,7 +15,7 @@
                     </a>
                 </div>
                 <div
-                    class="w-14 h-14 flex justify-center items-center border-1 rounded group transform transition duration-100 group-hover:shadow-lg hover:scale-110">
+                    class="animate1 w-14 h-14 flex justify-center items-center border-1 rounded group transform transition duration-100 group-hover:shadow-lg hover:scale-110">
                     <a href="https://github.com/{{ author.github }}" class="mx-3">
                         <svg class="h-6 w-6 transform group-hover:text-yellow-500" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 496 512">
@@ -25,7 +25,7 @@
                     </a>
                 </div>
                 <div
-                    class="w-14 h-14 flex justify-center items-center border-1 rounded group transform transition duration-100 group-hover:shadow-lg hover:scale-110">
+                    class="animate1 w-14 h-14 flex justify-center items-center border-1 rounded group transform transition duration-100 group-hover:shadow-lg hover:scale-110">
                     <a href="https://in.linkedin.com/in/{{ author.linkedin }}" class="mx-3">
                         <svg class="h-6 w-6 transform group-hover:text-yellow-500" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 448 512">
@@ -35,7 +35,7 @@
                     </a>
                 </div>
                 <div
-                    class="w-14 h-14 flex justify-center items-center border-1 rounded group transform transition duration-100 group-hover:shadow-lg hover:scale-110">
+                    class="animate1 w-14 h-14 flex justify-center items-center border-1 rounded group transform transition duration-100 group-hover:shadow-lg hover:scale-110">
                     <a href="https://scholar.google.com/citations?user={{ author.scholar }}" class="mx-3">
                         <svg class="h-6 w-6 transform group-hover:text-yellow-500" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512">
@@ -50,15 +50,15 @@
         <div class="text-lg flex justify-center items-center space-x-8">
             <div
                 class="h-20 flex justify-center items-center group transform transition duration-100 group-hover:shadow-lg hover:scale-110">
-                <a class="transform group-hover:text-yellow-500" href="{{ '/profile.html' | prepend: site.baseurl }}">ABOUT</a>
+                <a class="animate1 transform group-hover:text-yellow-500" href="{{ '/profile.html' | prepend: site.baseurl }}">ABOUT</a>
             </div>
             <div
                 class="h-20 flex justify-center items-center group transform transition duration-100 group-hover:shadow-lg hover:scale-110">
-                <a class="transform group-hover:text-yellow-500" href="{{ '/archive.html' | prepend: site.baseurl }}">POSTS</a>
+                <a class="animate1 transform group-hover:text-yellow-500" href="{{ '/archive.html' | prepend: site.baseurl }}">POSTS</a>
             </div>
             <div
                 class="h-20 flex justify-center items-center group transform transition duration-100 group-hover:shadow-lg hover:scale-110">
-                <a class="transform group-hover:text-yellow-500" href="{{ '/assets/cv_Jungyounghoon.pdf' | prepend: site.baseurl }}">CV</a>
+                <a class="animate1 transform group-hover:text-yellow-500" href="{{ '/assets/cv_Jungyounghoon.pdf' | prepend: site.baseurl }}">CV</a>
             </div>
         </div>
         {% endif %}

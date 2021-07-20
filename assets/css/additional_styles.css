@@ -16,3 +16,21 @@
 .border-1{
   border-width: 1px;
 }
+
+.animate1{
+  opacity: 0;
+    -webkit-transition: opacity 1.5s ease-in;
+       -moz-transition: opacity 1.5s ease-in;
+        -ms-transition: opacity 1.5s ease-in;
+         -o-transition: opacity 1.5s ease-in;
+            transition: opacity 1.5s ease-in;
+}
+.animate1.load {
+  opacity: 1;
+  color: rgba(245, 158, 11, 0.7);
+  -webkit-transition: opacity 1s ease;
+       -moz-transition: opacity 1s ease;
+        -ms-transition: opacity 1s ease;
+         -o-transition: opacity 1s ease;
+            transition: opacity 1s ease;
+}

@@ -76,6 +76,31 @@ layout: compress
                 { left: "\\(", right: "\\)", display: false }]
         });
     </script>
+    {% if page.url == "/" %}
+    <script>
+        (function () {
+            var elements = document.querySelectorAll(".animate1");
+            for (var i = 0; i < elements.length; i++) {
+                load(elements[i], i+1);
+                settle(elements[i], i+1);
+            }
+
+            function load(elem, i) {
+                console.log(elem);
+                setTimeout(function () {
+                    elem.classList.add("load");
+                }, 200 * i);
+            }
+
+            function settle(elem, i) {
+                setTimeout(function () {
+                    elem.classList.remove("animate1");
+                    elem.classList.remove("load");
+                }, 800 + 200 * i);
+            }
+        }());
+    </script>
+    {% endif %}
 </body>
 
 </html>
