@@ -19,11 +19,11 @@
 
 .animate1{
   opacity: 0;
-    -webkit-transition: opacity 1.5s ease-in;
-       -moz-transition: opacity 1.5s ease-in;
-        -ms-transition: opacity 1.5s ease-in;
-         -o-transition: opacity 1.5s ease-in;
-            transition: opacity 1.5s ease-in;
+    -webkit-transition: opacity 1s ease-in;
+       -moz-transition: opacity 1s ease-in;
+        -ms-transition: opacity 1s ease-in;
+         -o-transition: opacity 1s ease-in;
+            transition: opacity 1s ease-in;
 }
 .animate1.load {
   opacity: 1;

@@ -89,14 +89,14 @@ layout: compress
                 console.log(elem);
                 setTimeout(function () {
                     elem.classList.add("load");
-                }, 200 * i);
+                }, 80 * i);
             }
 
             function settle(elem, i) {
                 setTimeout(function () {
                     elem.classList.remove("animate1");
                     elem.classList.remove("load");
-                }, 800 + 200 * i);
+                }, 700 + 100 * i);
             }
         }());
     </script>
