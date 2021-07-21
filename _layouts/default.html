@@ -73,8 +73,9 @@ layout: compress
                             <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                         </svg>
                     </div>
-                    <input class="pt-1 w-full h-10 px-2 rounded font-light text-md focus:outline-none" type="search" name="search"
-                        placeholder="Search this Blog">
+                    <form action="{{ "/search.html" | preprend: site.baseurl }}" method="get">
+                    <input class="pt-1 w-full h-10 px-2 rounded font-light text-md focus:outline-none" id="search-input" type="search" name="query" placeholder="Search this Blog">
+                    </form>
                     </input>
                 </div>
                 <section class="flex">
@@ -127,23 +128,12 @@ layout: compress
 
         }());
     </script>
-    {% else %}
-    <script>
-        window.store = {
-          {% for post in site.posts %}
-            "{{ post.url | slugify }}": {
-                "title": "{{ post.title | xml_escape }}",
-                    "author": "{{ post.author | xml_escape }}",
-                        "category": "{{ post.category | xml_escape }}",
-                            "content": {{ post.content | strip_html | strip_newlines | jsonify }},
-                "url": "{{ post.url | xml_escape }}"
-            }
-        {% unless forloop.last %}, {% endunless %}
-        {% endfor %}
-        };
-    </script>
-    <script src="{{ " /assets/vendor/lunr/lunr.min.js" | prepend: site.baseurl }}"></script>
-    <script src="{{ " /assets/js/search.js" | prepend: site.baseurl }}"></script>
+    {% endif %}
+    {% assign searchUrl = "/search.html" | preprend: site.baseurl %}
+    {{searchUrl}}
+    {% if page.url == searchUrl %}
+    <script src="{{ "/assets/vendor/lunr/lunr.min.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/assets/js/search.js" | prepend: site.baseurl }}"></script>
     {% endif %}
 </body>
 
