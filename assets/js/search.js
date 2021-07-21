@@ -61,6 +61,7 @@ if (searchTerm) {
       this.field('title', { boost: 10 });
       this.field('category');
       this.field('tags');
+      this.field('url');
       this.field('author');
       search_index.forEach(ind => { this.add(ind) });
     })
