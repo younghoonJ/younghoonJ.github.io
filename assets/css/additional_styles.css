@@ -13,11 +13,9 @@
   height: 14px;
   border-radius: 7px;
 }
-.border-1{
-  border-width: 1px;
-}
 
-.animate1{
+
+.animate-index{
   opacity: 0;
     -webkit-transition: opacity 1s ease-in;
        -moz-transition: opacity 1s ease-in;
@@ -25,7 +23,7 @@
          -o-transition: opacity 1s ease-in;
             transition: opacity 1s ease-in;
 }
-.animate1.load {
+.animate-index.load {
   opacity: 1;
   color: rgba(245, 158, 11, 0.7);
   -webkit-transition: opacity 1s ease;

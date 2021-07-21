@@ -28,8 +28,7 @@ layout: compress
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet">
     {% comment %}
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     {% endcomment %}
@@ -55,27 +54,45 @@ layout: compress
         </div>
     </div>
     {% else %}
-    <div class="px-2">
-        <header class="max-w-4xl mx-auto">
-            {% include navbar.html %}
-        </header>
-    </div>
-    <div class="max-w-2xl m-auto">
-        <section class="flex">
-            {{ content }}
-        </section>
-        <div class="placeholder h-12"></div>
-        <div class="placeholder h-7"></div>
-        {% include footer.html %}
+    <div class="max-w-4xl mx-auto md:items-start">
+        <div class="mx-2 md:hidden">
+            <header>
+                {% include navbar.html %}
+            </header>
+        </div>
+        <div class="relative min-h-screen md:flex">
+            <div class="hidden md:block md:w-1/4 md:sticky top-20 pr-3 md:h-full">
+                {% include sidenav.html %}
+            </div>
+            <div class="max-w-2xl md:w-3/4 md:pb-10 border-l">
+                <div class="hidden md:flex h-14 border-b items-center group">
+                    <div class="pl-3 text-gray-300 top-0 group-hover:text-blue-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="7"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </div>
+                    <input class="pt-1 w-full h-10 px-2 rounded font-light text-md focus:outline-none" type="search" name="search"
+                        placeholder="Search this Blog">
+                    </input>
+                </div>
+                <section class="flex">
+                    {{ content }}
+                </section>
+            </div>
+        </div>
+        <div>{% include footer.html %}</div>
     </div>
     {% endif %}
+
+
     {% if page.hascode %}
     <script src="{{ " /assets/vendor/prism/prism.js" | prepend: site.baseurl }}"></script>
     {% endif %}
     {% if page.latex %}
     <script src="{{ " /assets/vendor/katex/katex.min.js" | prepend: site.baseurl }}"></script>
     <script src="{{ " /assets/vendor/katex/contrib/auto-render.min.js" | prepend: site.baseurl }}"></script>
-    {% endif %}
     <script type="text/javascript">
         renderMathInElement(document.body, {
             delimiters: [
@@ -85,17 +102,12 @@ layout: compress
                 { left: "\\(", right: "\\)", display: false }]
         });
     </script>
+    {% endif %}
+
     {% if page.url == "/" %}
     <script>
         (function () {
-            var elements = document.querySelectorAll(".animate1");
-            for (var i = 0; i < elements.length; i++) {
-                load(elements[i], i+1);
-                settle(elements[i], i+1);
-            }
-
             function load(elem, i) {
-                console.log(elem);
                 setTimeout(function () {
                     elem.classList.add("load");
                 }, 80 * i);
@@ -103,12 +115,35 @@ layout: compress
 
             function settle(elem, i) {
                 setTimeout(function () {
-                    elem.classList.remove("animate1");
+                    elem.classList.remove("animate-index");
                     elem.classList.remove("load");
                 }, 700 + 100 * i);
             }
+            var elements = document.querySelectorAll(".animate-index");
+            for (var i = 0; i < elements.length; i++) {
+                load(elements[i], i + 1);
+                settle(elements[i], i + 1);
+            }
+
         }());
     </script>
+    {% else %}
+    <script>
+        window.store = {
+          {% for post in site.posts %}
+            "{{ post.url | slugify }}": {
+                "title": "{{ post.title | xml_escape }}",
+                    "author": "{{ post.author | xml_escape }}",
+                        "category": "{{ post.category | xml_escape }}",
+                            "content": {{ post.content | strip_html | strip_newlines | jsonify }},
+                "url": "{{ post.url | xml_escape }}"
+            }
+        {% unless forloop.last %}, {% endunless %}
+        {% endfor %}
+        };
+    </script>
+    <script src="{{ " /assets/vendor/lunr/lunr.min.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ " /assets/js/search.js" | prepend: site.baseurl }}"></script>
     {% endif %}
 </body>
 

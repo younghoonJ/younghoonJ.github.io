@@ -8,7 +8,7 @@ description: Explains what the delegation pattern is and provide an example impl
 hascode: true
 ---
 
-공부하려는 목적이 아니라면, 그리고 라이선스 문제가 없다면 코드를 재사용하는 편이 효율 면에서나 관리 면에서나 좋다. 그럼 어떻게 코드를 재사용하는 것이 좋을까? 그냥 복사해서 붙일까?
+특별한 문제가 없다면 코드를 재사용하는 편이 효율 면에서나 관리 면에서나 좋다. 그럼 어떻게 코드를 재사용하는 것이 좋을까? 그냥 복사해서 붙일까?
 
 <!--more-->
 

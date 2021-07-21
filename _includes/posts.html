@@ -5,34 +5,20 @@
     {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
     <div>
         {% for year in postsByYear %}
-        <div>
-            <span class="text-2xl">
-                {{ year.name }}
-            </span>
-        </div>
-        <div>
+        <div class="grid grid-cols-1 space-y-8 divide-y divide-browngray">
             {% for post in year.items %}
-            <div class="relative px-1 rounded-lg">
+            <div class="py-4">
                 <a href="{{ site.baseurl }}{{ post.url }}">
-                    <div class="flex">
-                        <div class="w-1/12 flex justify-center items-center">
-                            <div class="absolute h-full border-2 border-gray-200"></div>
-                            <div class="rounded-full bg-gray-200 dot"></div>
+                    <div class="px-2 transform transition duration-100">
+                        <div class="my-1 py-1 text-xs flex justify-left items-center">
+                            <span class="text-orange-700"><time>{{ post.date | date: "%b/%d/%Y" }}</time></span>
+                            <span class="text-purple-700">&nbsp;{{ post.author }}</span>
                         </div>
-                        <div
-                            class="w-11/12 bg-gray-50 my-2 shadow-md rounded-md p-2 transform transition duration-300 hover:scale-110 hover:bg-white hover:absolute z-10">
-                            <div class="flex flex-col">
-                                <span class="text-sm"><time>{{ post.date | date: "%b/%d/%Y" }}</time></span>
-                                <span class="text-xl text-gray-900">
-                                    {{ post.title }}
-                                </span>
-                                <span class="text-xs">
-                                    By {{ post.author }}
-                                </span>
-                                <span class="text-base text-gray-500">
-                                    {{ post.description }}
-                                </span>
-                            </div>
+                        <div class="my-2 py-2 text-xl text-gray-800">
+                            {{ post.title }}
+                        </div>
+                        <div class="pb-2 text-gray-600">
+                            {{ post.excerpt }}
                         </div>
                     </div>
                 </a>
