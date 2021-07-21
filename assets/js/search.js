@@ -38,7 +38,7 @@ function displaySearchResult(filtered, search_index){
                           + '<span class="text-purple-700"><time>' + item.author + '</time></span>'
                         + '</div>'
                         + '<div class="py-2 text-xl text-gray-800">' + item.title + '</div>'
-                        + '<div class="pb-2 text-md text-fuchsia-400">'
+                        + '<div class="pb-2 text-md text-blue-400">'
                           + '<span class="text-sm text-gray-500">tags: </span>' + item.tags.join(', ') + '</div>'
                       + '</div>'
                     + '</a>';
