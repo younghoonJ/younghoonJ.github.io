@@ -63,6 +63,7 @@ if (searchTerm) {
       this.field('tags');
       this.field('url');
       this.field('author');
+      this.fetch('content')
       search_index.forEach(ind => { this.add(ind) });
     })
 
