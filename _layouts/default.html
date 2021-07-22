@@ -45,6 +45,7 @@ layout: compress
 
 <body class="font-roboslab">
     {% if page.url == "/" %}
+    <!-- this is for index page -->
     <div class="flex h-screen">
         <div class="max-w-2xl m-auto px-4">
             <section>
@@ -54,6 +55,7 @@ layout: compress
         </div>
     </div>
     {% else %}
+    <!-- this is for non index page -->
     <div class="max-w-4xl mx-auto md:items-start">
         <div class="mx-2 md:hidden">
             <header>
@@ -66,19 +68,17 @@ layout: compress
             </div>
             <div class="max-w-2xl md:w-3/4 border-l">
                 <div class="flex h-10 md:h-14 border-b border-t md:border-t-0 items-center group">
-                    <div class="pl-4 text-gray-300 top-0 group-hover:text-blue-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="11" cy="11" r="7"></circle>
-                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                        </svg>
-                    </div>
-                    <form class="w-full" action="{{ "/search.html" | preprend: site.baseurl }}" method="get">
-                        <input class="w-full md:pt-1 h-8 px-3 pr-6 md:pr-10 rounded font-light text-md focus:outline-none" id="search-input" type="search" name="query" placeholder="Search this Blog">
-                    </form>
-                    </input>
+                    {% include search-form.html %}
                 </div>
-                <section class="flex">
+                <section id="section-search-results" class="hidden">
+                    <div class="search-results my-3">
+                        <div id="search-header" class="px-6 font-light"></div>
+                        <div class="grid grid-cols-1 divide-y">
+                            <div id="search-results-list"></div>
+                        </div>
+                    </div>
+                </section>
+                <section id="section-normal">
                     {{ content }}
                 </section>
                 <div class="pt-20">{% include footer.html %}</div>
@@ -104,35 +104,20 @@ layout: compress
         });
     </script>
     {% endif %}
+    <script src="{{ " /assets/vendor/lunr/lunr.min.js" | prepend: site.baseurl }}" charset="utf-8"></script>
+    <script src="{{ " /assets/js/search.js" | prepend: site.baseurl }}" charset="utf-8"></script>
 
     {% if page.url == "/" %}
     <script>
-        (function () {
-            function load(elem, i) {
-                setTimeout(function () {
-                    elem.classList.add("load");
-                }, 80 * i);
-            }
-
-            function settle(elem, i) {
-                setTimeout(function () {
-                    elem.classList.remove("animate-index");
-                    elem.classList.remove("load");
-                }, 700 + 100 * i);
-            }
+        (function() {
             var elements = document.querySelectorAll(".animate-index");
             for (var i = 0; i < elements.length; i++) {
-                load(elements[i], i + 1);
-                settle(elements[i], i + 1);
+                const elem = elements[i];
+                setTimeout(() => elem.classList.add("load"), 60 * i);
+                setTimeout(() => elem.classList.remove("animate-index", "load"), 600 + 80 * (i + 1));
             }
-
         }());
     </script>
-    {% endif %}
-    {% assign searchUrl = "/search.html" | preprend: site.baseurl %}
-    {% if page.url == searchUrl %}
-    <script src="{{ "/assets/vendor/lunr/lunr.min.js" | prepend: site.baseurl }}"></script>
-    <script src="{{ "/assets/js/search.js" | prepend: site.baseurl }}"></script>
     {% endif %}
 </body>
 
