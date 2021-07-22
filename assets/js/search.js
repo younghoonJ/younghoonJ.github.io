@@ -277,7 +277,6 @@ function scrollToTop() {
   }, 10);
 }
 
-
 initSearchIndex();
 
 document.addEventListener("DOMContentLoaded", function () {
