@@ -110,7 +110,10 @@ layout: compress
     </script>
     {% endif %}
     {% if page.url != "/" %}
+    {% comment %}
     <script src="{{ " /assets/vendor/lunr/lunr.min.js" | prepend: site.baseurl }}"></script>
+    {% endcomment %}
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
     <script src="{{ " /assets/js/search.js" | prepend: site.baseurl }}"></script>
     {% endif %}
 
