@@ -57,17 +57,17 @@ layout: compress
     {% else %}
     <!-- this is for non index page -->
     <div class="max-w-4xl mx-auto md:items-start">
-        <div class="mx-2 md:hidden">
+        <div class="mx-2 md:hidden print:hidden">
             <header>
                 {% include navbar.html %}
             </header>
         </div>
         <div class="relative min-h-screen md:flex">
-            <div class="hidden md:block md:w-1/4 md:sticky top-20 pr-3 md:h-full">
+            <div class="hidden md:h-full print:hidden md:block md:w-1/4 md:sticky top-20 pr-3">
                 {% include sidenav.html %}
             </div>
-            <div class="max-w-2xl md:w-3/4 border-l">
-                <div class="flex h-10 md:h-14 border-b border-t md:border-t-0 items-center group">
+            <div class="max-w-2xl md:w-3/4 border-l print:border-0">
+                <div class="print:hidden flex h-10 md:h-14 border-b border-t md:border-t-0 items-center group">
                     {% include search-form.html %}
                 </div>
                 <section id="section-search-results" class="hidden">
