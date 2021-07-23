@@ -1,0 +1,31 @@
+{% if paginator.total_pages > 1 %}
+<ul class="mt-20 flex justify-center items-center pager">
+    <li class="mx-2 transform transition duration-200 hover:bg-blue-50 rounded-sm">
+        {% if paginator.previous_page %}
+        <a class="next" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">
+        {% else %}
+        <a class="next" href="">
+        {% endif %}
+            <div class="h-9 px-2 flex justify-center items-center">PREV</div>    
+        </a>
+    </li>
+    {% if paginator.page_trail %}
+    {% for trail in paginator.page_trail %}
+    <li class="mx-2 transform transition duration-200 hover:bg-blue-50 rounded-sm">
+    <a href="{{ trail.path | prepend: site.baseurl }}">
+        <div class="h-9 w-10 flex justify-center items-center {% if page.url == trail.path %}bg-gray-700 rounded-sm text-white{% endif %}">{{ trail.num }}</div>
+    </a>
+    </li>
+    {% endfor %}
+    {% endif %}
+    <li class="mx-2 transform transition duration-200 hover:bg-blue-50 rounded-sm">
+        {% if paginator.next_page %}
+        <a class="next" href="{{ paginator.next_page_path | prepend: site.baseurl }}">
+        {% else %}
+        <a class="next" href="">
+        {% endif %}
+            <div class="h-9 px-2 flex justify-center items-center">NEXT</div>    
+        </a>
+    </li>
+</ul>
+{% endif %}

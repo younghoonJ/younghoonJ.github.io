@@ -1,8 +1,10 @@
 title: Younghoon, Jung
 description: Personal site of Younghoon Jung.
 
+
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "younghoonjung.com" # the base hostname & protocol for your site
+
 
 author:
   name: Younghoon, Jung
@@ -12,11 +14,32 @@ author:
   scholar: MCkrLaIAAAAJ&hl
   cv_file: cv_Jungyounghoon_20210703.pdf
 
+
 plugins:
   - jekyll-feed
+  - jekyll-paginate-v2
   - jekyll-postcss
 
+
+permalink: /:year/:month/:title.html
+
+
+pagination:
+  enabled: true
+  per_page: 5
+  trail:
+    before: 5
+    after: 5
+  permalink: '/page/:num/'
+  title: ' - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+  indexpage: 'posts'
+
+
 highlighter: none
+
 
 markdown: kramdown
 kramdown:
