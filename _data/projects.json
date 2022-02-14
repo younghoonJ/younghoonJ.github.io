@@ -1,5 +1,10 @@
 [
-
+    {
+        "title": "Simulation of x.Cloud and research of high-performance job scheduler (Project Manager)",
+        "date_start": "2021-07-01",
+        "date_finish": "2021-11-31",
+        "content": ["Workload modeling and generation based on the analysis of the GPU cloud trace dataset.", "Job scheduling simulation of GPU cloud.", "Research and development of high-performance job scheduler.", "Reinforcement Learning, Statistical analysis"]
+    },
     {
         "title": "Brightics Studio",
         "date_start": "2019-12-01",
